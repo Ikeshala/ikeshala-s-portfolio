@@ -10,7 +10,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - 📂 **Project Showcase**: Detailed project pages with design process, challenges, and results
 - 🎯 **Interactive Elements**: Smooth transitions, hover effects, and engaging user interactions
 - 🔍 **Smart Filtering**: Horizontal carousel filter system for project categories
-- 📧 **Contact Integration**: Direct email contact with professional form design
+- 📧 **Contact Integration**: Professional contact form with Formspree integration for reliable email delivery
 - 🌐 **SEO Optimized**: Meta tags and structured data for better search visibility
 - 📱 **Mobile Navigation**: Modern hamburger menu with smooth animations
 - 🎠 **Carousel Components**: Interactive filter carousel for project categories
@@ -26,7 +26,8 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 ### Backend & Services
 - **GitHub Pages** - Static site hosting and deployment
-- **Email Integration** - Direct mailto links for client contact
+- **Formspree** - Professional email form handling and delivery
+- **Email Integration** - Direct mailto links and form-based contact
 
 ### Development Tools
 - **ESLint** - Code linting and quality assurance
@@ -109,6 +110,7 @@ Update your personal information in the following components:
 - **About Section**: Modify in `src/pages/About.tsx`
 - **Contact Information**: Update in `src/components/ContactForm.tsx` and `src/components/Footer.tsx`
 - **Email Address**: Update in multiple components for contact functionality
+- **Formspree Integration**: Configured for reliable email delivery to `ikeshala.peiris@gmail.com`
 
 ### Projects
 
@@ -176,11 +178,11 @@ For optimal performance, follow these guidelines when adding new project images:
    {
      id: '7',
      title: 'Your New Project',
-     image: '/images/your-project-image.png',
+     image: 'images/your-project-image.png',
      // ... other project data
    }
    ```
-3. The image will automatically be optimized with lazy loading
+3. The image will automatically be optimized with lazy loading and proper path handling
 
 ## 🌐 Deployment
 
@@ -229,12 +231,13 @@ The project is configured for GitHub Pages deployment with proper routing:
 ## 📊 Performance Optimization
 
 - **Image Optimization**: Automatic image compression with Vite Plugin Imagemin
+- **Lazy Loading**: Images load on-demand with intersection observer
 - **Code Splitting**: Automatic route-based code splitting
-- **Lazy Loading**: Components load on demand
 - **CSS Optimization**: Purged unused CSS in production
 - **Bundle Analysis**: Built-in bundle size optimization
 - **Mobile Performance**: Optimized for mobile devices with responsive design
 - **Loading Speed**: Fast initial load times with optimized assets
+- **Form Performance**: Real-time form submission with Formspree API
 
 ## 🔍 SEO Features
 
@@ -271,4 +274,4 @@ Visit the live portfolio: **[https://ikeshala.github.io/ikeshala-s-portfolio/](h
 
 ---
 
-**Note**: This portfolio showcases UI/UX design work with a focus on user experience, accessibility, and modern web standards. The contact form integrates directly with email clients for seamless client communication. 
+**Note**: This portfolio showcases UI/UX design work with a focus on user experience, accessibility, and modern web standards. The contact form uses Formspree for reliable email delivery and includes both form-based and direct email contact options. 
