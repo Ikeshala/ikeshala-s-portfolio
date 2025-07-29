@@ -7,12 +7,13 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - 🎨 **Modern Design**: Glass morphism effects with gradient colors and smooth animations
 - 📱 **Fully Responsive**: Mobile-first design that works seamlessly on all devices
 - ⚡ **Fast Performance**: Built with Vite for optimal loading speeds
-
 - 📂 **Project Showcase**: Detailed project pages with design process, challenges, and results
 - 🎯 **Interactive Elements**: Smooth transitions, hover effects, and engaging user interactions
-- 🔍 **Project Filtering**: Filter projects by category and tags
-- 📧 **Contact Form**: Integrated contact form for client inquiries
+- 🔍 **Smart Filtering**: Horizontal carousel filter system for project categories
+- 📧 **Contact Integration**: Direct email contact with professional form design
 - 🌐 **SEO Optimized**: Meta tags and structured data for better search visibility
+- 📱 **Mobile Navigation**: Modern hamburger menu with smooth animations
+- 🎠 **Carousel Components**: Interactive filter carousel for project categories
 
 ## 🛠️ Tech Stack
 
@@ -24,13 +25,15 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - **Vite** - Fast build tool and development server
 
 ### Backend & Services
-- **GitHub Pages** - Static site hosting
+- **GitHub Pages** - Static site hosting and deployment
+- **Email Integration** - Direct mailto links for client contact
 
 ### Development Tools
 - **ESLint** - Code linting and quality assurance
 - **PostCSS** - CSS processing and optimization
 - **TypeScript** - Static type checking
-- **Vite Plugin Imagemin** - Image optimization
+- **Vite Plugin Imagemin** - Image optimization and compression
+- **React Router DOM** - Client-side routing with GitHub Pages support
 
 ## 🚀 Getting Started
 
@@ -43,8 +46,8 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/ikeshala/ikeshala-portfolio.git
-   cd ikeshala-portfolio
+   git clone https://github.com/Ikeshala/ikeshala-s-portfolio.git
+   cd ikeshala-s-portfolio
    ```
 
 2. **Install dependencies**
@@ -58,7 +61,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
    ```
 
 4. **Open your browser**
-   Navigate to `http://localhost:5173` to view your portfolio
+   Navigate to `http://localhost:5173/ikeshala-s-portfolio/` to view your portfolio
 
 ### Available Scripts
 
@@ -75,15 +78,16 @@ npm run deploy       # Deploy to GitHub Pages
 ```
 src/
 ├── components/              # Reusable React components
-│   ├── Navigation.tsx      # Main navigation component
+│   ├── Navigation.tsx      # Main navigation with mobile menu
 │   ├── Hero.tsx           # Hero section with call-to-action
 │   ├── ProjectCard.tsx    # Project card component
 │   ├── ContactForm.tsx    # Contact form component
+│   ├── FilterCarousel.tsx # Horizontal filter carousel
 │   └── Footer.tsx         # Footer component
 ├── pages/                  # Page components
-│   ├── Home.tsx           # Landing page
-│   ├── About.tsx          # About page with skills and experience
-│   ├── Works.tsx          # Projects showcase page
+│   ├── Home.tsx           # Landing page with featured projects
+│   ├── About.tsx          # About page with skills and timeline
+│   ├── Works.tsx          # Projects showcase with filtering
 │   └── ProjectDetail.tsx  # Individual project detail page
 ├── contexts/               # React context providers
 │   └── ContentContext.tsx # Content state management
@@ -101,9 +105,10 @@ src/
 ### Personal Information
 
 Update your personal information in the following components:
-- **Name and Title**: Update in `src/components/Hero.tsx`
+- **Name and Title**: Update in `src/contexts/ContentContext.tsx`
 - **About Section**: Modify in `src/pages/About.tsx`
-- **Contact Information**: Update in `src/components/Footer.tsx`
+- **Contact Information**: Update in `src/components/ContactForm.tsx` and `src/components/Footer.tsx`
+- **Email Address**: Update in multiple components for contact functionality
 
 ### Projects
 
@@ -155,7 +160,7 @@ The portfolio uses custom CSS variables for consistent theming. Modify colors in
 
 ### GitHub Pages (Current Setup)
 
-The project is configured for GitHub Pages deployment:
+The project is configured for GitHub Pages deployment with proper routing:
 
 1. **Build the project**
    ```bash
@@ -171,6 +176,13 @@ The project is configured for GitHub Pages deployment:
    - Go to your repository settings
    - Enable GitHub Pages
    - Set source to `gh-pages` branch
+   - Your site will be available at: `https://yourusername.github.io/ikeshala-s-portfolio/`
+
+### Important Configuration Notes
+
+- **Base Path**: Configured for GitHub Pages subdirectory hosting
+- **SPA Routing**: Includes 404.html redirect for client-side routing
+- **Asset Optimization**: Images and assets are automatically optimized
 
 ### Alternative Deployment Options
 
@@ -195,14 +207,17 @@ The project is configured for GitHub Pages deployment:
 - **Lazy Loading**: Components load on demand
 - **CSS Optimization**: Purged unused CSS in production
 - **Bundle Analysis**: Built-in bundle size optimization
+- **Mobile Performance**: Optimized for mobile devices with responsive design
+- **Loading Speed**: Fast initial load times with optimized assets
 
 ## 🔍 SEO Features
 
-- Meta tags for social sharing
-- Structured data for search engines
-- Semantic HTML structure
-- Fast loading times
-- Mobile-friendly design
+- **Meta Tags**: Optimized for social sharing and search engines
+- **Structured Data**: Proper HTML semantics for better indexing
+- **Fast Loading**: Optimized for Core Web Vitals
+- **Mobile-Friendly**: Responsive design for all devices
+- **Accessibility**: WCAG compliant design patterns
+- **Open Graph**: Social media sharing optimization
 
 ## 🤝 Contributing
 
@@ -218,12 +233,23 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
-- Built with React and TypeScript
-- Styled with Tailwind CSS
-- Icons from Font Awesome
-- Images from Unsplash
-- Deployed on GitHub Pages
+- **React & TypeScript**: Modern web development stack
+- **Tailwind CSS**: Utility-first styling framework
+- **Font Awesome**: Professional icon library
+- **Vite**: Fast build tool and development server
+- **GitHub Pages**: Reliable hosting platform
+
+## 📧 Contact Information
+
+- **Email**: ikeshala.peiris@gmail.com
+- **LinkedIn**: [Ikeshala Peiris](https://www.linkedin.com/in/ikeshala-peiris)
+- **Dribbble**: [@ikeshala](https://dribbble.com/ikeshala)
+- **GitHub**: [@Ikeshala](https://github.com/Ikeshala)
+
+## 🌐 Live Demo
+
+Visit the live portfolio: **[https://ikeshala.github.io/ikeshala-s-portfolio/](https://ikeshala.github.io/ikeshala-s-portfolio/)**
 
 ---
 
-**Note**: This portfolio showcases UI/UX design work with a focus on user experience, accessibility, and modern web standards. 
+**Note**: This portfolio showcases UI/UX design work with a focus on user experience, accessibility, and modern web standards. The contact form integrates directly with email clients for seamless client communication. 
