@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import { getCategoryColor } from '../utils/categoryColors'
 import { useState, useEffect } from 'react'
-import { allProjects } from '../data/projects'
+import { allProjects, ProjectLink } from '../data/projects'
 import OptimizedImage from '../components/OptimizedImage'
 import ProjectButtons from '../components/ProjectButtons'
 
@@ -61,14 +61,22 @@ const ProjectDetail = () => {
             <span className={`text-xs px-3 py-1 rounded-full border ${getCategoryColor(project.category)}`}>
               {project.category}
             </span>
-            <a
-              href={project.figmaLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/60 hover:text-white transition-colors"
-            >
-              <i className="fab fa-figma text-xl"></i>
-            </a>
+            {project.links && project.links.length > 0 && (
+              <div className="flex items-center gap-2">
+                {project.links.slice(0, 2).map((link: ProjectLink, index: number) => (
+                  <a
+                    key={index}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/60 hover:text-white transition-colors p-1"
+                    title={link.label}
+                  >
+                    <i className={`${link.icon} text-lg`}></i>
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             {project.title}

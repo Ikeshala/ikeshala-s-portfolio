@@ -28,7 +28,7 @@ export const allProjects: Project[] = [
     id: '1',
     title: 'ThogaKade - Point of Sale System',
     description: 'A desktop-based Point of Sale (POS) system designed to streamline sales operations with an intuitive user interface and scalable architecture.',
-    image: 'images/thogakade.jpg',
+    image: 'images/thoga-kade.jpg',
     category: 'Desktop Applications',
     links: [
       {
@@ -57,7 +57,7 @@ export const allProjects: Project[] = [
     id: '2',
     title: 'Mobile Banking App',
     description: 'Secure and intuitive mobile banking experience with biometric authentication and personalized financial insights.',
-    image: 'images/pure-pettle.png',
+    image: 'images/friskay-cat-food.jpg',
     category: 'Mobile Apps',
     links: [
       {
@@ -121,7 +121,7 @@ export const allProjects: Project[] = [
     id: '4',
     title: 'Travel Booking App',
     description: 'Modern travel booking application with intuitive search, booking, and itinerary management features.',
-    image: 'images/pure-pettle.png',
+    image: 'images/mos-burger.jpg',
     category: 'Mobile Apps',
     links: [
       {
