@@ -12,7 +12,7 @@ const ProjectDetail = () => {
 
   // Use current allProjects directly to ensure latest data
   useEffect(() => {
-    // Clear any cached project data
+    // Clear any cached project data and force fresh data
     localStorage.removeItem('portfolioProjects')
     setProjects(allProjects)
   }, [])
