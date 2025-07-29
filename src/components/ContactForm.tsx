@@ -17,12 +17,27 @@ const ContactForm = () => {
     setSubmitStatus('idle')
 
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', message: '' })
-      setTimeout(() => setSubmitStatus('idle'), 3000)
+      const response = await fetch('https://formspree.io/f/mnnzajpb', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', message: '' })
+        setTimeout(() => setSubmitStatus('idle'), 3000)
+      } else {
+        throw new Error('Form submission failed')
+      }
     } catch (error) {
+      console.error('Form submission error:', error)
       setSubmitStatus('error')
       setTimeout(() => setSubmitStatus('idle'), 3000)
     } finally {
