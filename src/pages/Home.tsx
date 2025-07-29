@@ -42,7 +42,7 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {featuredProjects.map((project) => (
+            {featuredProjects.map((project, index) => (
               <ProjectCard
                 key={project.id}
                 id={project.id}
@@ -52,6 +52,7 @@ const Home = () => {
                 category={project.category}
                 figmaLink={project.figmaLink}
                 tags={project.tags}
+                index={index}
               />
             ))}
           </div>

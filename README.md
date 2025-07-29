@@ -256,9 +256,22 @@ The project is configured for GitHub Pages deployment with proper routing:
 4. Push to the branch: `git push origin feature-name`
 5. Submit a pull request
 
-## 📝 License
+## 📝 License & Copyright
 
-This project is open source and available under the [MIT License](LICENSE).
+**Copyright © 2024 Ikeshala Peiris. All rights reserved.**
+
+This portfolio website and its contents are the exclusive property of Ikeshala Peiris. Unauthorized copying, distribution, modification, public display, or public performance of this work is strictly prohibited.
+
+### **Usage Restrictions:**
+- ❌ **No copying** of code, design, or content
+- ❌ **No forking** of this repository
+- ❌ **No commercial use** without explicit permission
+- ❌ **No derivative works** without written consent
+- ✅ **Viewing** the live site is permitted
+- ✅ **Inspiration** for your own work is encouraged
+
+### **Contact for Permissions:**
+For any usage requests, please contact: **ikeshala.peiris@gmail.com**
 
 ## 🙏 Acknowledgments
 

@@ -35,8 +35,8 @@ const OptimizedImage = ({
         })
       },
       {
-        rootMargin: '50px 0px',
-        threshold: 0.01
+        rootMargin: '100px 0px',
+        threshold: 0.1
       }
     )
 

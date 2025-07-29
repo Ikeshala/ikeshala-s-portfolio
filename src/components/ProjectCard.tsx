@@ -10,9 +10,10 @@ interface ProjectCardProps {
   category: string
   figmaLink?: string
   tags: string[]
+  index?: number
 }
 
-const ProjectCard = ({ id, title, description, image, category, figmaLink, tags }: ProjectCardProps) => {
+const ProjectCard = ({ id, title, description, image, category, figmaLink, tags, index = 0 }: ProjectCardProps) => {
   return (
     <Link to={`/project/${id}`}>
       <div className="project-card glass-morphism rounded-2xl overflow-hidden cursor-pointer group h-full flex flex-col">
@@ -21,6 +22,7 @@ const ProjectCard = ({ id, title, description, image, category, figmaLink, tags 
             src={image}
             alt={title}
             className="w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+            loading={index < 3 ? 'eager' : 'lazy'}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         </div>

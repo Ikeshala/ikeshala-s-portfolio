@@ -1,0 +1,23 @@
+# Copyright © 2024 Ikeshala Peiris. All rights reserved.
+# Unauthorized copying, distribution, or modification of this file is strictly prohibited.
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Force specific line endings for different file types
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text eol=lf 

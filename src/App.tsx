@@ -1,3 +1,8 @@
+/**
+ * Copyright © 2024 Ikeshala Peiris. All rights reserved.
+ * Unauthorized copying, distribution, or modification of this file is strictly prohibited.
+ */
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Home from './pages/Home'
