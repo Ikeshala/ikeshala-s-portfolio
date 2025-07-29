@@ -10,17 +10,11 @@ const ProjectDetail = () => {
   const [projects, setProjects] = useState(allProjects)
   const [project, setProject] = useState<any>(null)
 
-  // Load projects from localStorage on mount
+  // Use current allProjects directly to ensure latest data
   useEffect(() => {
-    const savedProjects = localStorage.getItem('portfolioProjects')
-    if (savedProjects) {
-      try {
-        const parsed = JSON.parse(savedProjects)
-        setProjects(parsed)
-      } catch (error) {
-        console.error('Error loading saved projects:', error)
-      }
-    }
+    // Clear any cached project data
+    localStorage.removeItem('portfolioProjects')
+    setProjects(allProjects)
   }, [])
 
   // Find project by ID
