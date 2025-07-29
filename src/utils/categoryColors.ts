@@ -18,7 +18,7 @@ export const getCategoryColor = (category: string) => {
     case 'Mobile Apps':
       return 'bg-green-500/20 text-green-400 border-green-500/30'
     case 'Web Applications':
-      return 'bg-purple-500/20 text-purple-400 border-purple-500/30'
+      return 'bg-amber-500/20 text-amber-400 border-amber-500/30'
     case 'Design Systems':
       return 'bg-orange-500/20 text-orange-400 border-orange-500/30'
     case 'Branding & Identity':
