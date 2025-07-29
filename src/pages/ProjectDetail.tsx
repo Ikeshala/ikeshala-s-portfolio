@@ -3,6 +3,7 @@ import { getCategoryColor } from '../utils/categoryColors'
 import { useState, useEffect } from 'react'
 import { allProjects } from '../data/projects'
 import OptimizedImage from '../components/OptimizedImage'
+import ProjectButtons from '../components/ProjectButtons'
 
 const ProjectDetail = () => {
   const { id } = useParams()
@@ -153,33 +154,7 @@ const ProjectDetail = () => {
                 </ul>
               </div>
             </div>
-            <div className="flex gap-4">
-              <a
-                href={project.figmaLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1"
-              >
-                <button className="px-8 py-4 rounded-xl font-semibold transition-all duration-300 inline-flex items-center justify-center gemini-gradient text-white glow-effect w-full relative">
-                  <i className="fab fa-figma mr-2 relative z-10"></i>
-                  <span className="relative z-10">View in Figma</span>
-                </button>
-              </a>
-              {/* Conditional Live Site button - only show if project has live site */}
-              {project.liveSiteUrl && (
-                <a
-                  href={project.liveSiteUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1"
-                >
-                  <button className="glass-button px-8 py-4 rounded-xl font-semibold transition-all duration-300 inline-flex items-center justify-center glass-morphism text-white hover:bg-white/20 w-full">
-                    <i className="fas fa-external-link-alt mr-2"></i>
-                    Live Site
-                  </button>
-                </a>
-              )}
-            </div>
+            <ProjectButtons links={project.links} />
           </div>
         </div>
         

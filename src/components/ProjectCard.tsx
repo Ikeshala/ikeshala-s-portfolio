@@ -2,18 +2,20 @@ import { Link } from 'react-router-dom'
 import { getCategoryColor } from '../utils/categoryColors'
 import OptimizedImage from './OptimizedImage'
 
+import { ProjectLink } from '../data/projects'
+
 interface ProjectCardProps {
   id: string
   title: string
   description: string
   image: string
   category: string
-  figmaLink?: string
+  links: ProjectLink[]
   tags: string[]
   index?: number
 }
 
-const ProjectCard = ({ id, title, description, image, category, figmaLink, tags, index = 0 }: ProjectCardProps) => {
+const ProjectCard = ({ id, title, description, image, category, links, tags, index = 0 }: ProjectCardProps) => {
   return (
     <Link to={`/project/${id}`}>
       <div className="project-card glass-morphism rounded-2xl overflow-hidden cursor-pointer group h-full flex flex-col">
@@ -32,15 +34,15 @@ const ProjectCard = ({ id, title, description, image, category, figmaLink, tags,
             <span className={`text-xs px-2.5 py-1 rounded-full border ${getCategoryColor(category)}`}>
               {category}
             </span>
-            {figmaLink && (
+            {links && links.length > 0 && (
               <a
-                href={figmaLink}
+                href={links[0].url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/60 hover:text-white transition-colors p-1"
                 onClick={(e) => e.stopPropagation()}
               >
-                <i className="fab fa-figma text-lg"></i>
+                <i className={`${links[0].icon} text-lg`}></i>
               </a>
             )}
           </div>

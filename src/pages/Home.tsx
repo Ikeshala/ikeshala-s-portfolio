@@ -50,7 +50,7 @@ const Home = () => {
                 description={project.description}
                 image={project.image}
                 category={project.category}
-                figmaLink={project.figmaLink}
+                links={project.links}
                 tags={project.tags}
                 index={index}
               />

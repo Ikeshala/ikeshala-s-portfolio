@@ -1,11 +1,17 @@
+export interface ProjectLink {
+  type: 'figma-design' | 'figma-prototype' | 'wireframe' | 'github' | 'live-site' | 'custom'
+  url: string
+  label: string
+  icon: string
+}
+
 export interface Project {
   id: string
   title: string
   description: string
   image: string
   category: string
-  figmaLink: string
-  liveSiteUrl?: string
+  links: ProjectLink[]
   tags: string[]
   challenge: string
   solution: string
@@ -24,8 +30,14 @@ export const allProjects: Project[] = [
     description: 'Complete redesign of an e-commerce platform focusing on conversion optimization and user experience improvements.',
     image: 'images/pure-pettle.png',
     category: 'Web Solutions',
-    figmaLink: 'https://figma.com/sample-project',
-    liveSiteUrl: undefined,
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://figma.com/sample-project',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      }
+    ],
     tags: ['UX Research', 'UI Design', 'Prototyping'],
     challenge: 'The existing platform had a high bounce rate and poor conversion. Users were struggling with navigation and checkout process.',
     solution: 'Redesigned the entire user journey with simplified navigation, streamlined checkout, and improved visual hierarchy.',
@@ -47,8 +59,20 @@ export const allProjects: Project[] = [
     description: 'Secure and intuitive mobile banking experience with biometric authentication and personalized financial insights.',
     image: 'images/pure-pettle.png',
     category: 'Mobile Apps',
-    figmaLink: 'https://figma.com/banking-app',
-    liveSiteUrl: 'https://example.com/banking-app',
+    links: [
+      {
+        type: 'figma-prototype',
+        url: 'https://figma.com/banking-app',
+        label: 'View Prototype',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'live-site',
+        url: 'https://example.com/banking-app',
+        label: 'Live Demo',
+        icon: 'fas fa-external-link-alt'
+      }
+    ],
     tags: ['Mobile Design', 'Security UX', 'Prototyping'],
     challenge: 'Users needed a secure yet accessible banking experience with complex financial data presented in an intuitive way.',
     solution: 'Created a mobile-first design with biometric authentication, simplified navigation, and clear financial insights.',
@@ -70,8 +94,14 @@ export const allProjects: Project[] = [
     description: 'Comprehensive healthcare management system with real-time patient monitoring and analytics dashboard.',
     image: 'images/pure-pettle.png',
     category: 'Web Applications',
-    figmaLink: 'https://figma.com/healthcare-dashboard',
-    liveSiteUrl: undefined,
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://figma.com/healthcare-dashboard',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      }
+    ],
     tags: ['Dashboard Design', 'Data Visualization', 'UX Research'],
     challenge: 'Healthcare professionals needed to access complex patient data quickly while maintaining accuracy and compliance.',
     solution: 'Designed an intuitive dashboard with clear data hierarchy, real-time updates, and role-based access controls.',
@@ -93,8 +123,20 @@ export const allProjects: Project[] = [
     description: 'Modern travel booking application with intuitive search, booking, and itinerary management features.',
     image: 'images/pure-pettle.png',
     category: 'Mobile Apps',
-    figmaLink: 'https://figma.com/travel-app',
-    liveSiteUrl: 'https://example.com/travel-app',
+    links: [
+      {
+        type: 'figma-prototype',
+        url: 'https://figma.com/travel-app',
+        label: 'View Prototype',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'live-site',
+        url: 'https://example.com/travel-app',
+        label: 'Live Demo',
+        icon: 'fas fa-external-link-alt'
+      }
+    ],
     tags: ['Mobile Design', 'UX Research', 'Prototyping'],
     challenge: 'Users found the booking process complex and time-consuming, leading to high abandonment rates.',
     solution: 'Streamlined the booking flow with smart search, one-click booking, and personalized recommendations.',
@@ -116,8 +158,14 @@ export const allProjects: Project[] = [
     description: 'Interactive learning platform with personalized content delivery and progress tracking.',
     image: 'images/pure-pettle.png',
     category: 'Web Applications',
-    figmaLink: 'https://figma.com/education-platform',
-    liveSiteUrl: undefined,
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://figma.com/education-platform',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      }
+    ],
     tags: ['UX Research', 'UI Design', 'User Testing'],
     challenge: 'Students struggled with content discovery and progress tracking, leading to low engagement and completion rates.',
     solution: 'Created an adaptive learning interface with personalized content paths and clear progress indicators.',
@@ -139,8 +187,20 @@ export const allProjects: Project[] = [
     description: 'Comprehensive fitness tracking application with workout planning and progress analytics.',
     image: 'images/pure-pettle.png',
     category: 'Mobile Apps',
-    figmaLink: 'https://figma.com/fitness-app',
-    liveSiteUrl: 'https://example.com/fitness-app',
+    links: [
+      {
+        type: 'figma-prototype',
+        url: 'https://figma.com/fitness-app',
+        label: 'View Prototype',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'live-site',
+        url: 'https://example.com/fitness-app',
+        label: 'Live Demo',
+        icon: 'fas fa-external-link-alt'
+      }
+    ],
     tags: ['Mobile Design', 'Data Visualization', 'UX Research'],
     challenge: 'Users needed motivation and clear progress tracking to maintain their fitness routines effectively.',
     solution: 'Designed an engaging interface with gamification elements, detailed analytics, and social features.',
