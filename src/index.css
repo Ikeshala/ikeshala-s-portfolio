@@ -145,6 +145,12 @@ h2 {
   );
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.gemini-gradient > * {
+  position: relative;
+  z-index: 2;
 }
 
 .gemini-gradient:hover::before {
