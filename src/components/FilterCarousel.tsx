@@ -9,7 +9,9 @@ interface FilterCarouselProps {
 const FilterCarousel = ({ filters, activeFilter, onFilterChange }: FilterCarouselProps) => {
   const [showLeftArrow, setShowLeftArrow] = useState(false)
   const [showRightArrow, setShowRightArrow] = useState(true)
+  const [shouldCenter, setShouldCenter] = useState(true)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
 
   const checkScrollPosition = () => {
     if (!scrollContainerRef.current) return
@@ -19,14 +21,34 @@ const FilterCarousel = ({ filters, activeFilter, onFilterChange }: FilterCarouse
     setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 1)
   }
 
+  const checkIfShouldCenter = () => {
+    if (!scrollContainerRef.current || !containerRef.current) return
+    
+    const scrollContainer = scrollContainerRef.current
+    const container = containerRef.current
+    
+    // Check if content width is less than container width
+    const contentWidth = scrollContainer.scrollWidth
+    const containerWidth = container.clientWidth
+    
+    setShouldCenter(contentWidth <= containerWidth)
+  }
+
   useEffect(() => {
     checkScrollPosition()
+    checkIfShouldCenter()
+    
     const scrollContainer = scrollContainerRef.current
     if (scrollContainer) {
       scrollContainer.addEventListener('scroll', checkScrollPosition)
       return () => scrollContainer.removeEventListener('scroll', checkScrollPosition)
     }
-  }, [])
+  }, [filters])
+
+  // Re-check centering when filters change
+  useEffect(() => {
+    checkIfShouldCenter()
+  }, [filters])
 
   const scroll = (direction: 'left' | 'right') => {
     if (!scrollContainerRef.current) return
@@ -44,7 +66,7 @@ const FilterCarousel = ({ filters, activeFilter, onFilterChange }: FilterCarouse
   }
 
   return (
-    <div className="relative group">
+    <div ref={containerRef} className="relative group">
       {/* Left Arrow */}
       {showLeftArrow && (
         <button
@@ -68,7 +90,9 @@ const FilterCarousel = ({ filters, activeFilter, onFilterChange }: FilterCarouse
       {/* Scroll Container */}
       <div 
         ref={scrollContainerRef}
-        className="flex gap-3 overflow-x-auto scrollbar-hide px-2 py-1"
+        className={`flex gap-3 overflow-x-auto scrollbar-hide px-2 py-1 transition-all duration-300 ${
+          shouldCenter ? 'justify-center' : 'justify-start'
+        }`}
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {filters.map((filter) => (
