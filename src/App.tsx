@@ -10,7 +10,7 @@ import { ContentProvider } from './contexts/ContentContext'
 function App() {
   return (
     <ContentProvider>
-      <Router>
+      <Router basename="/ikeshala-s-portfolio">
         <div className="min-h-screen flex flex-col">
           <Navigation />
           <div className="flex-1">
