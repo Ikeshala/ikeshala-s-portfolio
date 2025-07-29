@@ -9,7 +9,7 @@ const Footer = () => {
               <span className="gemini-gradient-text">Ikeshala Peiris</span>
             </div>
             <p className="text-white/60 text-sm">
-              UX/UI Designer crafting digital experiences
+              UI/UX Designer crafting digital experiences
             </p>
           </div>
           <div className="flex space-x-6">

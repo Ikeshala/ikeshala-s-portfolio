@@ -1,6 +1,6 @@
-# Ikeshala Peiris - UX/UI Designer Portfolio
+# Ikeshala Peiris - UI/UX Designer Portfolio
 
-A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio showcases UX/UI design work with a beautiful glass morphism design and smooth animations.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio showcases UI/UX design work with a beautiful glass morphism design and smooth animations.
 
 ## ✨ Features
 
@@ -226,4 +226,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Note**: This portfolio showcases UX/UI design work with a focus on user experience, accessibility, and modern web standards. 
+**Note**: This portfolio showcases UI/UX design work with a focus on user experience, accessibility, and modern web standards. 

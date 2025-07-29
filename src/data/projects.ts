@@ -30,7 +30,7 @@ export const allProjects: Project[] = [
     challenge: 'The existing platform had a high bounce rate and poor conversion. Users were struggling with navigation and checkout process.',
     solution: 'Redesigned the entire user journey with simplified navigation, streamlined checkout, and improved visual hierarchy.',
     results: '45% increase in conversion rate, 60% reduction in bounce rate, and 30% improvement in user satisfaction scores.',
-    overview: 'As Lead UX/UI Designer, I led a 3-month redesign project focusing on conversion optimization. My role involved user research, wireframing, prototyping, and overseeing the implementation of the new design system.',
+    overview: 'As Lead UI/UX Designer, I led a 3-month redesign project focusing on conversion optimization. My role involved user research, wireframing, prototyping, and overseeing the implementation of the new design system.',
     tools: ['Figma', 'Miro', 'Principle', 'Maze'],
     keyFeatures: [
       'Simplified navigation structure',
@@ -76,7 +76,7 @@ export const allProjects: Project[] = [
     challenge: 'Healthcare professionals needed to access complex patient data quickly while maintaining accuracy and compliance.',
     solution: 'Designed an intuitive dashboard with clear data hierarchy, real-time updates, and role-based access controls.',
     results: '35% faster data access, 45% reduction in errors, and 60% improvement in user satisfaction.',
-    overview: 'As UX/UI Designer, I worked on a 5-month healthcare dashboard project. My responsibilities included user research with healthcare professionals, designing complex data visualizations, and ensuring HIPAA compliance in the interface design.',
+    overview: 'As UI/UX Designer, I worked on a 5-month healthcare dashboard project. My responsibilities included user research with healthcare professionals, designing complex data visualizations, and ensuring HIPAA compliance in the interface design.',
     tools: ['Figma', 'Adobe XD', 'Tableau', 'Hotjar'],
     keyFeatures: [
       'Real-time patient monitoring',
