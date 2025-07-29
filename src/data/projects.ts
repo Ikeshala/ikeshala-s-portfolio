@@ -26,30 +26,30 @@ export interface Project {
 export const allProjects: Project[] = [
   {
     id: '1',
-    title: 'E-commerce Platform Redesign',
-    description: 'Complete redesign of an e-commerce platform focusing on conversion optimization and user experience improvements.',
-    image: 'images/pure-pettle.png',
-    category: 'Web Solutions',
+    title: 'ThogaKade - Point of Sale System',
+    description: 'A desktop-based Point of Sale (POS) system designed to streamline sales operations with an intuitive user interface and scalable architecture.',
+    image: 'images/thogakade.jpg',
+    category: 'Desktop Applications',
     links: [
       {
-        type: 'figma-design',
-        url: 'https://figma.com/sample-project',
-        label: 'View Design',
-        icon: 'fab fa-figma'
+        type: 'github',
+        url: 'https://github.com/Ikeshala/ThogaKade_with_Layered_Architecture.git',
+        label: 'View Code',
+        icon: 'fab fa-github'
       }
     ],
-    tags: ['UX Research', 'UI Design', 'Prototyping'],
-    challenge: 'The existing platform had a high bounce rate and poor conversion. Users were struggling with navigation and checkout process.',
-    solution: 'Redesigned the entire user journey with simplified navigation, streamlined checkout, and improved visual hierarchy.',
-    results: '45% increase in conversion rate, 60% reduction in bounce rate, and 30% improvement in user satisfaction scores.',
-    overview: 'As Lead UI/UX Designer, I led a 3-month redesign project focusing on conversion optimization. My role involved user research, wireframing, prototyping, and overseeing the implementation of the new design system.',
-    tools: ['Figma', 'Miro', 'Principle', 'Maze'],
+    tags: ['UI Design', 'JavaFX', 'Desktop Application'],
+    challenge: 'Create a seamless and responsive POS interface that simplifies daily sales tasks and ensures data integrity across multiple user interactions.',
+    solution: 'Implemented a layered architecture with JavaFX and Scene Builder to build a visually clean, user-friendly interface. Integrated JDBC for secure and efficient database connectivity.',
+    results: 'Successfully deployed as JAR and EXE files for cross-platform use. The application provides fast, stable performance and improved usability for end users.',
+    overview: 'As the UI/UX designer and developer of ThogaKade, I focused on building a smooth user experience for managing transactions. I used JavaFX and Scene Builder for the UI, applied CSS for consistent styling, and integrated JDBC to connect with a MySQL database, ensuring data reliability.',
+    tools: ['Java', 'JavaFX', 'CSS', 'Scene Builder', 'JDBC', 'MySQL'],
     keyFeatures: [
-      'Simplified navigation structure',
-      'One-click checkout process',
-      'Personalized product recommendations',
-      'Mobile-first responsive design',
-      'Accessibility compliance (WCAG 2.1)'
+      "User-friendly dashboard for quick navigation",
+      "Layered architecture for easy maintenance",
+      "Modern UI built with JavaFX and CSS",
+      "Robust data integration using JDBC with MySQL",
+      "Packaged in JAR and EXE formats for easy deployment"
     ],
     featured: true
   },
@@ -213,6 +213,41 @@ export const allProjects: Project[] = [
       'Social challenges and sharing',
       'Gamification elements',
       'Integration with wearables'
+    ],
+    featured: false
+  },
+  {
+    id: '7',
+    title: 'Project Management Desktop App',
+    description: 'Professional desktop application for team collaboration and project management with advanced features.',
+    image: 'images/pure-pettle.png',
+    category: 'Desktop Applications',
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://figma.com/project-management-app',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'github',
+        url: 'https://github.com/example/project-management-app',
+        label: 'View Code',
+        icon: 'fab fa-github'
+      }
+    ],
+    tags: ['Desktop Design', 'UX Research', 'Data Visualization'],
+    challenge: 'Teams needed a powerful yet intuitive desktop application for managing complex projects with multiple stakeholders and dependencies.',
+    solution: 'Designed a comprehensive desktop interface with advanced project management features, real-time collaboration, and intuitive navigation.',
+    results: '70% improvement in project delivery time, 45% reduction in communication overhead, and 80% user satisfaction rate.',
+    overview: 'As Lead UX Designer, I designed a comprehensive desktop application for project management. My role involved extensive user research with project managers, designing complex data visualizations, and creating an intuitive interface for managing large-scale projects.',
+    tools: ['Figma', 'Adobe XD', 'Sketch', 'UserTesting'],
+    keyFeatures: [
+      'Advanced project timeline visualization',
+      'Real-time team collaboration tools',
+      'Resource allocation dashboard',
+      'Custom workflow automation',
+      'Cross-platform synchronization'
     ],
     featured: false
   }
