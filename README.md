@@ -156,6 +156,32 @@ The portfolio uses custom CSS variables for consistent theming. Modify colors in
 - Update image URLs in project data
 - Optimize images for web performance
 
+#### Image Optimization Guidelines
+
+For optimal performance, follow these guidelines when adding new project images:
+
+1. **Image Format**: Use WebP or optimized PNG/JPG
+2. **Image Size**: Keep images under 500KB for project cards
+3. **Dimensions**: 
+   - Project cards: 800x600px (16:9 ratio)
+   - Project details: 1200x800px (3:2 ratio)
+4. **Naming**: Use descriptive names like `project-name-cover.png`
+5. **Optimization**: Use tools like TinyPNG or ImageOptim before adding
+
+#### Adding New Project Images
+
+1. Add your optimized image to `public/images/`
+2. Update the project data in `src/data/projects.ts`:
+   ```typescript
+   {
+     id: '7',
+     title: 'Your New Project',
+     image: '/images/your-project-image.png',
+     // ... other project data
+   }
+   ```
+3. The image will automatically be optimized with lazy loading
+
 ## 🌐 Deployment
 
 ### GitHub Pages (Current Setup)

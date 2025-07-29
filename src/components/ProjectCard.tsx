@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { getCategoryColor } from '../utils/categoryColors'
+import OptimizedImage from './OptimizedImage'
 
 interface ProjectCardProps {
   id: string
@@ -16,10 +17,10 @@ const ProjectCard = ({ id, title, description, image, category, figmaLink, tags 
     <Link to={`/project/${id}`}>
       <div className="project-card glass-morphism rounded-2xl overflow-hidden cursor-pointer group h-full flex flex-col">
         <div className="h-48 sm:h-52 bg-gradient-to-br from-blue-500/20 to-purple-500/20 relative overflow-hidden flex-shrink-0">
-          <img
+          <OptimizedImage
             src={image}
             alt={title}
-            className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+            className="w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         </div>

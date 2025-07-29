@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom'
 import { getCategoryColor } from '../utils/categoryColors'
 import { useState, useEffect } from 'react'
 import { allProjects } from '../data/projects'
+import OptimizedImage from '../components/OptimizedImage'
 
 const ProjectDetail = () => {
   const { id } = useParams()
@@ -78,10 +79,11 @@ const ProjectDetail = () => {
         
         <div className="mb-12">
           <div className="relative h-96 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl overflow-hidden">
-            <img
-              src={project.image.startsWith('http') ? project.image : "/images/" + project.image}
+            <OptimizedImage
+              src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover opacity-80"
+              className="w-full h-full opacity-80"
+              loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
