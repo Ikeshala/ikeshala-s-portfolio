@@ -15,6 +15,7 @@ const ProjectDetail = () => {
     // Clear any cached project data and force fresh data
     localStorage.removeItem('portfolioProjects')
     setProjects(allProjects)
+    console.log('ProjectDetail: Using fresh project data')
   }, [])
 
   // Find project by ID
