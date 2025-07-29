@@ -158,9 +158,9 @@ const ProjectDetail = () => {
                 rel="noopener noreferrer"
                 className="flex-1"
               >
-                <button className="glass-button px-8 py-4 rounded-xl font-semibold transition-all duration-300 inline-flex items-center justify-center gemini-gradient text-white glow-effect w-full">
-                  <i className="fab fa-figma mr-2"></i>
-                  View in Figma
+                <button className="px-8 py-4 rounded-xl font-semibold transition-all duration-300 inline-flex items-center justify-center gemini-gradient text-white glow-effect w-full relative">
+                  <i className="fab fa-figma mr-2 relative z-10"></i>
+                  <span className="relative z-10">View in Figma</span>
                 </button>
               </a>
               {/* Conditional Live Site button - only show if project has live site */}

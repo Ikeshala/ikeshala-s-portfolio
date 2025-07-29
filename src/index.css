@@ -209,6 +209,28 @@ p {
   z-index: 1;
 }
 
+/* Specific fix for button content visibility */
+.gemini-gradient button i,
+.gemini-gradient button span,
+.gemini-gradient a i,
+.gemini-gradient a span {
+  position: relative;
+  z-index: 3 !important;
+}
+
+/* Ensure button text content is always visible */
+.gemini-gradient button,
+.gemini-gradient a {
+  position: relative;
+  overflow: visible;
+}
+
+.gemini-gradient button *,
+.gemini-gradient a * {
+  position: relative;
+  z-index: 3;
+}
+
 .gemini-gradient:hover::before {
   opacity: 1;
 }
