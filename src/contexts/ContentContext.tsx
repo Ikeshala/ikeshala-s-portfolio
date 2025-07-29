@@ -16,9 +16,9 @@ interface ContentContextType {
 
 const defaultContent: PortfolioContent = {
   name: 'Ikeshala Peiris',
-  title: 'UI/UX Designer & Frontend Developer',
+  title: 'UI/UX Designer',
   email: 'ikeshala.peiris@gmail.com',
-  bio: 'Passionate UI/UX designer and frontend developer with expertise in creating user-centered digital experiences. I specialize in designing intuitive interfaces and building responsive web applications that delight users.',
+  bio: 'I design intuitive and beautiful digital experiences that solve real problems and delight users.',
   designSkills: 'UI/UX Design, Wireframing, Prototyping, User Research, Design Systems, Responsive Design',
   tools: 'Figma, Adobe XD, Sketch, InVision, Principle, Photoshop, Illustrator',
   technologies: 'HTML/CSS, JavaScript, React, TypeScript, Tailwind CSS, Node.js, Git'

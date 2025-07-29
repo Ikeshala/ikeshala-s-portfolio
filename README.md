@@ -16,7 +16,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 ## 🛠️ Tech Stack
 
-### Frontend
+### Design & Development
 - **React 18** - Modern React with hooks and functional components
 - **TypeScript** - Type safety and enhanced development experience
 - **Tailwind CSS** - Utility-first CSS framework for rapid styling
