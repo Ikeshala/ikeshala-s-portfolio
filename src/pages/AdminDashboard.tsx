@@ -3,7 +3,7 @@ import { useAuth } from '../contexts/AuthContext'
 import { Link } from 'react-router-dom'
 import AdminLogin from '../components/AdminLogin'
 
-const ADMIN_EMAIL = 'admin@ikeshala.com' // Updated admin email
+const ADMIN_EMAIL = 'ikeshala.peiris@gmail.com' // Updated admin email
 
 const AdminDashboard = () => {
   const { user } = useAuth()

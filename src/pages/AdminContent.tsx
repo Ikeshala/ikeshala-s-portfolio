@@ -2,7 +2,7 @@ import { useAuth } from '../contexts/AuthContext'
 import { Navigate } from 'react-router-dom'
 import { useContent } from '../contexts/ContentContext'
 
-const ADMIN_EMAIL = 'your-admin-email@example.com' // <-- Set your admin email here
+const ADMIN_EMAIL = 'ikeshala.peiris@gmail.com' // <-- Set your admin email here
 
 const AdminContent = () => {
   const { user } = useAuth()
@@ -23,7 +23,7 @@ const AdminContent = () => {
     const defaultData = {
       name: 'Ikeshala Peiris',
       title: 'UI/UX Designer',
-      email: 'ikeshala@example.com',
+      email: 'ikeshala.peiris@gmail.com',
       bio: 'Passionate UI/UX designer with expertise in creating user-centered digital experiences.',
       designSkills: 'UI/UX Design, Wireframing, Prototyping, User Research, Design Systems',
       tools: 'Figma, Adobe XD, Sketch, InVision, Principle',

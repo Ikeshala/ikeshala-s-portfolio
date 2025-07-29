@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
 import { allProjects } from '../data/projects'
 
-const ADMIN_EMAIL = 'your-admin-email@example.com' // <-- Set your admin email here
+const ADMIN_EMAIL = 'ikeshala.peiris@gmail.com' // <-- Set your admin email here
 
 // Built-in default categories
 const defaultCategories = [

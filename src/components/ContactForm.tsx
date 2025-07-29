@@ -55,7 +55,7 @@ const ContactForm = () => {
               <div>
                 <p className="text-white font-medium">Email</p>
                 <a href={`mailto:${content.email}`} className="text-white/70 hover:text-white transition-colors">
-                  ikeshala@example.com
+                  ikeshala.peiris@gmail.com
                 </a>
               </div>
             </div>
