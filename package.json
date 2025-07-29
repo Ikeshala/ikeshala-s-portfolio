@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ikeshala.github.io/ikeshala-portfolio",
+  "homepage": "https://ikeshala.github.io/ikeshala-s-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
