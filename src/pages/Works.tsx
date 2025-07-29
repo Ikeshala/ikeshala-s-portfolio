@@ -14,19 +14,11 @@ const Works = () => {
   const allCategories = Array.from(new Set(projects.map(p => p.category)));
   const filterButtons = ['All Projects', ...allCategories];
 
-  // Load projects from localStorage on mount
+  // Use static project data directly
   useEffect(() => {
-    const savedProjects = localStorage.getItem('portfolioProjects')
-    if (savedProjects) {
-      try {
-        const parsed = JSON.parse(savedProjects)
-        // Sort by newest first (highest ID first)
-        const sortedProjects = parsed.sort((a: any, b: any) => parseInt(b.id) - parseInt(a.id))
-        setProjects(sortedProjects)
-      } catch (error) {
-        console.error('Error loading saved projects:', error)
-      }
-    }
+    // Sort by newest first (highest ID first)
+    const sortedProjects = allProjects.sort((a, b) => parseInt(b.id) - parseInt(a.id))
+    setProjects(sortedProjects)
   }, [])
 
   const filteredProjects = activeFilter === 'All Projects' 

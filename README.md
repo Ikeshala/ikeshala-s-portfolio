@@ -1,13 +1,13 @@
 # Ikeshala Peiris - UX/UI Designer Portfolio
 
-A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio showcases UX/UI design work with a beautiful glass morphism design, smooth animations, and an admin interface for content management.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio showcases UX/UI design work with a beautiful glass morphism design and smooth animations.
 
 ## ✨ Features
 
 - 🎨 **Modern Design**: Glass morphism effects with gradient colors and smooth animations
 - 📱 **Fully Responsive**: Mobile-first design that works seamlessly on all devices
 - ⚡ **Fast Performance**: Built with Vite for optimal loading speeds
-- 🔐 **Admin Interface**: Secure admin dashboard for managing projects and content
+
 - 📂 **Project Showcase**: Detailed project pages with design process, challenges, and results
 - 🎯 **Interactive Elements**: Smooth transitions, hover effects, and engaging user interactions
 - 🔍 **Project Filtering**: Filter projects by category and tags
@@ -24,8 +24,6 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - **Vite** - Fast build tool and development server
 
 ### Backend & Services
-- **Supabase** - Backend-as-a-Service for authentication and data management
-- **Firebase** - Additional backend services and hosting
 - **GitHub Pages** - Static site hosting
 
 ### Development Tools
@@ -81,18 +79,13 @@ src/
 │   ├── Hero.tsx           # Hero section with call-to-action
 │   ├── ProjectCard.tsx    # Project card component
 │   ├── ContactForm.tsx    # Contact form component
-│   ├── Footer.tsx         # Footer component
-│   └── AdminLogin.tsx     # Admin authentication component
+│   └── Footer.tsx         # Footer component
 ├── pages/                  # Page components
 │   ├── Home.tsx           # Landing page
 │   ├── About.tsx          # About page with skills and experience
 │   ├── Works.tsx          # Projects showcase page
-│   ├── ProjectDetail.tsx  # Individual project detail page
-│   ├── AdminDashboard.tsx # Admin dashboard overview
-│   ├── AdminProjects.tsx  # Admin project management
-│   └── AdminContent.tsx   # Admin content management
+│   └── ProjectDetail.tsx  # Individual project detail page
 ├── contexts/               # React context providers
-│   ├── AuthContext.tsx    # Authentication state management
 │   └── ContentContext.tsx # Content state management
 ├── data/                   # Static data and content
 │   └── projects.ts        # Project data and interfaces
@@ -191,24 +184,9 @@ The project is configured for GitHub Pages deployment:
 2. Upload `dist` folder to Netlify
 3. Configure custom domain
 
-#### Firebase Hosting
-1. Install Firebase CLI: `npm install -g firebase-tools`
-2. Initialize: `firebase init hosting`
-3. Deploy: `firebase deploy`
 
-## 🔧 Admin Features
 
-The portfolio includes a secure admin interface for content management:
 
-- **Authentication**: Secure login system
-- **Project Management**: Add, edit, and delete projects
-- **Content Management**: Update portfolio content
-- **Dashboard**: Overview of portfolio statistics
-
-### Admin Access
-- Navigate to `/admin` for the admin dashboard
-- Use secure authentication to access admin features
-- Manage projects and content through the admin interface
 
 ## 📊 Performance Optimization
 
@@ -248,4 +226,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Note**: This portfolio showcases UX/UI design work with a focus on user experience, accessibility, and modern web standards. The admin interface allows for easy content updates and project management. 
+**Note**: This portfolio showcases UX/UI design work with a focus on user experience, accessibility, and modern web standards. 

@@ -7,32 +7,21 @@ import { allProjects } from '../data/projects'
 const Home = () => {
   const [featuredProjects, setFeaturedProjects] = useState(allProjects.slice(0, 3))
 
-  // Load projects from localStorage on mount
+  // Use static project data directly
   useEffect(() => {
-    const savedProjects = localStorage.getItem('portfolioProjects')
-    if (savedProjects) {
-      try {
-        const parsed = JSON.parse(savedProjects)
-        // Show featured projects first, then newest projects as fallback
-        const featuredProjects = parsed.filter((project: any) => project.featured)
-        const sortedProjects = parsed.sort((a: any, b: any) => parseInt(b.id) - parseInt(a.id))
-        
-        if (featuredProjects.length >= 3) {
-          setFeaturedProjects(featuredProjects.slice(0, 3))
-        } else if (featuredProjects.length > 0) {
-          // Mix featured and newest projects
-          const remainingSlots = 3 - featuredProjects.length
-          const newestNonFeatured = sortedProjects
-            .filter((project: any) => !project.featured)
-            .slice(0, remainingSlots)
-          setFeaturedProjects([...featuredProjects, ...newestNonFeatured])
-        } else {
-          // No featured projects, show newest 3
-          setFeaturedProjects(sortedProjects.slice(0, 3))
-        }
-      } catch (error) {
-        console.error('Error loading saved projects:', error)
-      }
+    const featuredProjects = allProjects.filter(project => project.featured)
+    if (featuredProjects.length >= 3) {
+      setFeaturedProjects(featuredProjects.slice(0, 3))
+    } else if (featuredProjects.length > 0) {
+      // Mix featured and newest projects
+      const remainingSlots = 3 - featuredProjects.length
+      const newestNonFeatured = allProjects
+        .filter(project => !project.featured)
+        .slice(0, remainingSlots)
+      setFeaturedProjects([...featuredProjects, ...newestNonFeatured])
+    } else {
+      // No featured projects, show newest 3
+      setFeaturedProjects(allProjects.slice(0, 3))
     }
   }, [])
 
