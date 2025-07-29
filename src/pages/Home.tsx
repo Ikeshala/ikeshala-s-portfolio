@@ -30,18 +30,18 @@ const Home = () => {
       <Hero />
       
       {/* Featured Works Section */}
-      <section className="py-20 px-6 relative">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 relative">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               <span className="gemini-gradient-text">Featured Works</span>
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto">
               A curated selection of my best projects that showcase my design process and problem-solving approach.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {featuredProjects.map((project) => (
               <ProjectCard
                 key={project.id}
@@ -60,15 +60,15 @@ const Home = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 relative">
+      <section id="contact" className="py-16 sm:py-20 px-4 sm:px-6 relative">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               <span className="gemini-gradient-text">Let's Create Something</span>
               <br />
               <span className="text-white">Amazing Together</span>
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto">
               Ready to transform your digital presence? I'd love to hear about your project and discuss how we can bring your vision to life.
             </p>
           </div>

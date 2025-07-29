@@ -1,4 +1,5 @@
 import ProjectCard from '../components/ProjectCard'
+import FilterCarousel from '../components/FilterCarousel'
 import { useState, useEffect, useCallback } from 'react'
 import { allProjects } from '../data/projects'
 
@@ -68,37 +69,29 @@ const Works = () => {
       <div className="absolute inset-0 background-effects"></div>
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl floating-animation"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl floating-animation" style={{ animationDelay: '2s' }}></div>
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
-        <section className="py-20 px-6 relative">
-          <div className="text-center mb-16 fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <section className="py-16 sm:py-20 px-4 sm:px-6 relative">
+          <div className="text-center mb-12 sm:mb-16 fade-in">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               <span className="gemini-gradient-text">My Works</span>
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto">
               Explore my portfolio of digital experiences, each crafted with attention to detail and user-centered design principles.
             </p>
           </div>
 
-          {/* Filter Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {filterButtons.map((filter) => (
-              <button
-                key={filter}
-                onClick={() => handleFilterChange(filter)}
-                className={`glass-button px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
-                  activeFilter === filter 
-                    ? 'gemini-gradient text-white' 
-                    : 'glass-morphism text-white hover:bg-white/20'
-                }`}
-              >
-                {filter}
-              </button>
-            ))}
+          {/* Filter Carousel */}
+          <div className="mb-10 sm:mb-12">
+            <FilterCarousel
+              filters={filterButtons}
+              activeFilter={activeFilter}
+              onFilterChange={handleFilterChange}
+            />
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
             {displayedProjects.map((project) => (
               <ProjectCard
                 key={project.id}
@@ -148,11 +141,11 @@ const Works = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="text-center pb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+        <section className="text-center pb-12 sm:pb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">
             <span className="gemini-gradient-text">Ready to Start a Project?</span>
           </h2>
-          <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-white/70 mb-6 sm:mb-8 max-w-2xl mx-auto">
             I'm always excited to work on new challenges and create amazing digital experiences. Let's discuss your project!
           </p>
           <a href="mailto:ikeshala.peiris@gmail.com">

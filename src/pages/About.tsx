@@ -58,20 +58,20 @@ const About = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl floating-animation"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl floating-animation" style={{ animationDelay: '2s' }}></div>
       
-      <section className="py-20 px-6 relative">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 relative">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
-          <div className="text-center mb-16 fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="text-center mb-12 sm:mb-16 fade-in">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               <span className="gemini-gradient-text">About Me</span>
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto">
               {content.bio}
             </p>
           </div>
 
           {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left Column */}
             <div className="space-y-6">
               {/* Design Philosophy */}
@@ -124,14 +124,14 @@ const About = () => {
           </div>
 
           {/* At a Glance - now full width */}
-          <div className="glass-morphism rounded-2xl p-8 fade-in my-12" style={{ animationDelay: '0.6s' }}>
+          <div className="glass-morphism rounded-2xl p-6 sm:p-8 fade-in my-10 sm:my-12" style={{ animationDelay: '0.6s' }}>
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-xl flex items-center justify-center mr-4">
                 <i className="fas fa-chart-bar text-white text-xl"></i>
               </div>
               <h3 className="text-2xl font-semibold text-white">At a Glance</h3>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
               <div className="text-center p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors duration-300">
                 <div className="text-3xl font-bold gemini-gradient-text mb-2">40+</div>
                 <div className="text-sm text-white/70">UI/UX Projects Delivered</div>
@@ -152,16 +152,18 @@ const About = () => {
           </div>
 
           {/* Timeline Section */}
-          <div className="mt-20">
-            <div className="text-center mb-12 fade-in" style={{ animationDelay: '0.7s' }}>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <div className="mt-16 sm:mt-20">
+            <div className="text-center mb-10 sm:mb-12 fade-in" style={{ animationDelay: '0.7s' }}>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                 <span className="gemini-gradient-text">My Journey</span>
               </h2>
-              <p className="text-white/70 max-w-2xl mx-auto">
+              <p className="text-white/70 max-w-2xl mx-auto px-4">
                 A timeline of my professional growth and key milestones in my design career
               </p>
             </div>
-            <div className="relative">
+            
+            {/* Desktop Timeline */}
+            <div className="hidden md:block relative">
               {/* Timeline Line */}
               <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500"></div>
               <div className="space-y-12">
@@ -207,6 +209,27 @@ const About = () => {
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* Mobile Timeline */}
+            <div className="md:hidden space-y-6">
+              {timeline.map((item, index) => (
+                <div key={index} className="fade-in" style={{ animationDelay: `${0.8 + index * 0.1}s` }}>
+                  <div className="glass-morphism rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
+                    <div className="flex items-start mb-4">
+                      <div className={`w-12 h-12 bg-gradient-to-br ${item.color} rounded-full flex items-center justify-center mr-4 flex-shrink-0`}>
+                        <i className={`${item.icon} text-white text-lg`}></i>
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="text-lg font-semibold text-white mb-1">{item.title}</h4>
+                        <p className="text-sm text-white/60 mb-2">{item.period}</p>
+                        <h5 className="text-white font-medium mb-3">{item.subtitle}</h5>
+                        <p className="text-white/70 text-sm leading-relaxed">{item.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
