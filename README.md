@@ -265,13 +265,6 @@ This project is open source and available under the [MIT License](LICENSE).
 - **Vite**: Fast build tool and development server
 - **GitHub Pages**: Reliable hosting platform
 
-## 📧 Contact Information
-
-- **Email**: ikeshala.peiris@gmail.com
-- **LinkedIn**: [Ikeshala Peiris](https://www.linkedin.com/in/ikeshala-peiris)
-- **Dribbble**: [@ikeshala](https://dribbble.com/ikeshala)
-- **GitHub**: [@Ikeshala](https://github.com/Ikeshala)
-
 ## 🌐 Live Demo
 
 Visit the live portfolio: **[https://ikeshala.github.io/ikeshala-s-portfolio/](https://ikeshala.github.io/ikeshala-s-portfolio/)**

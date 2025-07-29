@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { getImagePath } from '../utils/imageUtils'
 
 interface OptimizedImageProps {
   src: string
@@ -28,7 +29,7 @@ const OptimizedImage = ({
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setImageSrc(src)
+            setImageSrc(getImagePath(src))
             observer.unobserve(img)
           }
         })
@@ -42,7 +43,7 @@ const OptimizedImage = ({
     if (loading === 'lazy') {
       observer.observe(img)
     } else {
-      setImageSrc(src)
+      setImageSrc(getImagePath(src))
     }
 
     return () => {
