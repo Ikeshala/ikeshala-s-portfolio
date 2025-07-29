@@ -24,7 +24,7 @@ const ProjectCard = ({ id, title, description, image, category, links, tags, ind
             src={image}
             alt={title}
             className="w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300"
-            loading={index < 3 ? 'eager' : 'lazy'}
+            loading={index < 6 ? 'eager' : 'lazy'}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         </div>

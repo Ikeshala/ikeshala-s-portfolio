@@ -2,6 +2,7 @@ import ProjectCard from '../components/ProjectCard'
 import FilterCarousel from '../components/FilterCarousel'
 import { useState, useEffect, useCallback } from 'react'
 import { allProjects } from '../data/projects'
+import { preloadImages } from '../utils/imageUtils'
 
 const Works = () => {
   const [activeFilter, setActiveFilter] = useState('All Projects')
@@ -15,11 +16,15 @@ const Works = () => {
   const allCategories = Array.from(new Set(projects.map(p => p.category)));
   const filterButtons = ['All Projects', ...allCategories];
 
-  // Use static project data directly
+  // Use static project data directly and preload images
   useEffect(() => {
     // Sort by newest first (highest ID first)
     const sortedProjects = allProjects.sort((a, b) => parseInt(b.id) - parseInt(a.id))
     setProjects(sortedProjects)
+
+    // Preload the first 12 project images for faster loading
+    const firstTwelveImages = sortedProjects.slice(0, 12).map(project => project.image)
+    preloadImages(firstTwelveImages).catch(console.error)
   }, [])
 
   const filteredProjects = activeFilter === 'All Projects' 

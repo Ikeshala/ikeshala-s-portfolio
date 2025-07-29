@@ -14,4 +14,20 @@ export const getImagePath = (imagePath: string): string => {
   const cleanPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath
   
   return `${basePath}/${cleanPath}`
+}
+
+// Preload critical images for faster loading
+export const preloadImage = (src: string): Promise<void> => {
+  return new Promise((resolve, reject) => {
+    const img = new Image()
+    img.onload = () => resolve()
+    img.onerror = () => reject()
+    img.src = getImagePath(src)
+  })
+}
+
+// Preload multiple images
+export const preloadImages = async (imagePaths: string[]): Promise<void> => {
+  const promises = imagePaths.map(path => preloadImage(path))
+  await Promise.allSettled(promises)
 } 

@@ -3,11 +3,12 @@ import ProjectCard from '../components/ProjectCard'
 import ContactForm from '../components/ContactForm'
 import { useState, useEffect } from 'react'
 import { allProjects } from '../data/projects'
+import { preloadImages } from '../utils/imageUtils'
 
 const Home = () => {
   const [featuredProjects, setFeaturedProjects] = useState(allProjects.slice(0, 3))
 
-  // Use static project data directly
+  // Use static project data directly and preload images
   useEffect(() => {
     const featuredProjects = allProjects.filter(project => project.featured)
     if (featuredProjects.length >= 3) {
@@ -23,6 +24,10 @@ const Home = () => {
       // No featured projects, show newest 3
       setFeaturedProjects(allProjects.slice(0, 3))
     }
+
+    // Preload the first 6 project images for faster loading
+    const firstSixImages = allProjects.slice(0, 6).map(project => project.image)
+    preloadImages(firstSixImages).catch(console.error)
   }, [])
 
   return (
