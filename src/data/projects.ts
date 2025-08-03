@@ -55,10 +55,10 @@ export const allProjects: Project[] = [
   },
   {
     id: '2',
-    title: 'Mobile Banking App',
-    description: 'Secure and intuitive mobile banking experience with biometric authentication and personalized financial insights.',
+    title: 'Friskay - Cat Food Web Page',
+    description: 'Designed and developed an engaging cat food landing page focused on a visually appealing interface, integrated animations, and responsive design.',
     image: 'images/friskay-cat-food.jpg',
-    category: 'Mobile Apps',
+    category: 'Web Solutions',
     links: [
       {
         type: 'figma-prototype',
@@ -73,18 +73,18 @@ export const allProjects: Project[] = [
         icon: 'fas fa-external-link-alt'
       }
     ],
-    tags: ['Mobile Design', 'Security UX', 'Prototyping'],
-    challenge: 'Users needed a secure yet accessible banking experience with complex financial data presented in an intuitive way.',
-    solution: 'Created a mobile-first design with biometric authentication, simplified navigation, and clear financial insights.',
-    results: '40% increase in daily active users, 50% reduction in support tickets, and 25% improvement in transaction completion.',
-    overview: 'As Senior UX Designer, I led a 4-month mobile banking app project. My role included user research, security UX design, prototyping, and collaborating with development teams to ensure seamless implementation.',
-    tools: ['Figma', 'Sketch', 'Principle', 'UserTesting'],
+    tags: ['UI Design', 'Landing Page', 'Responsive Design', 'Animation'],
+    challenge: 'Create a visually appealing and brand-consistent web page for a cat food brand, incorporating engaging elements while ensuring responsiveness and user trust.',
+    solution: 'Designed a modular landing page using Figma components and Auto Layout. Developed a strong visual hierarchy with animated elements and testimonial integration to build trust and improve engagement.',
+    results: 'Achieved a dynamic, responsive, and brand-aligned landing page with consistent UI components and smooth animations. Improved visual engagement and user credibility through testimonials.',
+    overview: 'As a UI/UX designer, I designed the Friskay landing page to align with brand goals and user expectations. I used Figma\'s component system and Auto Layout to ensure responsive behavior, integrated animation for engagement, and designed a testimonial section to build trust through veterinary endorsements.',
+    tools: ['Figma', 'Auto Layout', 'Prototype Animation'],
     keyFeatures: [
-      'Biometric authentication',
-      'Real-time transaction tracking',
-      'Personalized financial insights',
-      'Secure messaging system',
-      'Quick transfer features'
+      'Intuitive header and navigation bar',
+      'Reusable components built in Figma',
+      'Responsive Auto Layout for different screen sizes',
+      'Visually strong hero section with concise messaging',
+      'Veterinarian testimonials with engaging animations'
     ],
     featured: true
   },
