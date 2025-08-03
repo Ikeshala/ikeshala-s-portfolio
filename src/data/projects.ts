@@ -90,30 +90,39 @@ export const allProjects: Project[] = [
   },
   {
     id: '3',
-    title: 'Healthcare Dashboard',
-    description: 'Comprehensive healthcare management system with real-time patient monitoring and analytics dashboard.',
+    title: 'MOS Burger Shop Management System - Web Application',
+    description: 'A full-featured web application designed to streamline the operations of MOS Burgers, a local food business, by replacing manual processes with a modern, efficient system for managing food items, orders, customers, and reporting.',
     image: 'images/ward-management-system.jpg',
     category: 'Web Applications',
     links: [
       {
         type: 'figma-design',
-        url: 'https://figma.com/healthcare-dashboard',
+        url: 'https://figma.com/mos-burger-system',
         label: 'View Design',
         icon: 'fab fa-figma'
+      },
+      {
+        type: 'github',
+        url: 'https://github.com/example/mos-burger-system',
+        label: 'View Code',
+        icon: 'fab fa-github'
       }
     ],
-    tags: ['Dashboard Design', 'Data Visualization', 'UX Research'],
-    challenge: 'Healthcare professionals needed to access complex patient data quickly while maintaining accuracy and compliance.',
-    solution: 'Designed an intuitive dashboard with clear data hierarchy, real-time updates, and role-based access controls.',
-    results: '35% faster data access, 45% reduction in errors, and 60% improvement in user satisfaction.',
-    overview: 'As UI/UX Designer, I worked on a 5-month healthcare dashboard project. My responsibilities included user research with healthcare professionals, designing complex data visualizations, and ensuring HIPAA compliance in the interface design.',
-    tools: ['Figma', 'Adobe XD', 'Tableau', 'Hotjar'],
+    tags: ["UI Design", "Web Application", "Inventory Management", "Order Management", "Customer Management"],
+    challenge: 'The business relied on manual transaction and inventory methods, which caused inefficiencies, missed sales opportunities, and poor tracking of customer orders and expired items.',
+    solution: 'Developed a modular, user-friendly web system covering all operational areas—inventory, ordering, customer handling, and reporting. Designed clear navigation and intuitive interfaces for users to manage daily tasks efficiently.',
+    results: 'Significantly improved business efficiency by automating manual processes. Enhanced visibility of inventory and order history. Enabled the business to track monthly and annual sales and build a customer base for future campaigns.',
+    overview: 'As the UI/UX Designer and developer, I designed the MOS Burger Management System to simplify business workflows. I created clean, categorized layouts for food listings, streamlined the order flow, and designed interfaces for managing customers, reports, and inventory updates. The project helped modernize day-to-day operations and brought better structure to internal processes.',
+    tools: ['Figma', 'HTML', 'CSS', 'JavaScript', 'MySQL', 'PHP'],
     keyFeatures: [
-      'Real-time patient monitoring',
-      'Interactive data visualization',
-      'Role-based access control',
-      'Mobile-responsive design',
-      'Compliance reporting tools'
+      "Home section with categorized food items and item details",
+  "Search functionality by name, code, or category",
+  "Inventory management with add, update, delete options",
+  "Expiration alerts and removal for outdated items",
+  "Order management with cart system, discount logic, and order tracking",
+  "Customer management with profile editing and order history",
+  "Monthly and annual sales report generation",
+  "Customer ranking based on order frequency"
     ],
     featured: true
   },
