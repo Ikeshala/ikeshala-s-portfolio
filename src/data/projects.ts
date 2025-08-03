@@ -116,13 +116,13 @@ export const allProjects: Project[] = [
     tools: ['Figma', 'HTML', 'CSS', 'JavaScript', 'MySQL', 'PHP'],
     keyFeatures: [
       "Home section with categorized food items and item details",
-  "Search functionality by name, code, or category",
-  "Inventory management with add, update, delete options",
-  "Expiration alerts and removal for outdated items",
-  "Order management with cart system, discount logic, and order tracking",
-  "Customer management with profile editing and order history",
-  "Monthly and annual sales report generation",
-  "Customer ranking based on order frequency"
+      "Search functionality by name, code, or category",
+      "Inventory management with add, update, delete options",
+      "Expiration alerts and removal for outdated items",
+      "Order management with cart system, discount logic, and order tracking",
+      "Customer management with profile editing and order history",
+      "Monthly and annual sales report generation",
+      "Customer ranking based on order frequency"
     ],
     featured: true
   },
