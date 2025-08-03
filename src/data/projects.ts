@@ -39,7 +39,7 @@ export const allProjects: Project[] = [
       }
     ],
     tags: ['UI Design', 'JavaFX', 'Desktop Application'],
-    challenge: 'Create a seamless and responsive POS interface that simplifies daily sales tasks and ensures data integrity across multiple user interactions.',
+    challenge: 'Create a seamless POS interface that simplifies daily sales tasks and ensures data integrity across multiple user interactions.',
     solution: 'Implemented a layered architecture with JavaFX and Scene Builder to build a visually clean, user-friendly interface. Integrated JDBC for secure and efficient database connectivity.',
     results: 'Successfully deployed as JAR and EXE files for cross-platform use. The application provides fast, stable performance and improved usability for end users.',
     overview: 'As the UI/UX designer and developer of ThogaKade, I focused on building a smooth user experience for managing transactions. I used JavaFX and Scene Builder for the UI, applied CSS for consistent styling, and integrated JDBC to connect with a MySQL database, ensuring data reliability.',
@@ -92,7 +92,7 @@ export const allProjects: Project[] = [
     id: '3',
     title: 'Healthcare Dashboard',
     description: 'Comprehensive healthcare management system with real-time patient monitoring and analytics dashboard.',
-    image: 'images/pure-pettle.png',
+    image: 'images/ward-management-system.jpg',
     category: 'Web Applications',
     links: [
       {
@@ -121,7 +121,7 @@ export const allProjects: Project[] = [
     id: '4',
     title: 'Travel Booking App',
     description: 'Modern travel booking application with intuitive search, booking, and itinerary management features.',
-    image: 'images/mos-burger.jpg',
+    image: 'images/destination-dreamers.jpg',
     category: 'Mobile Apps',
     links: [
       {
@@ -156,7 +156,7 @@ export const allProjects: Project[] = [
     id: '5',
     title: 'Educational Platform',
     description: 'Interactive learning platform with personalized content delivery and progress tracking.',
-    image: 'images/pure-pettle.png',
+    image: 'images/community-cleanup-volunteer-sign-up.jpg',
     category: 'Web Applications',
     links: [
       {
@@ -185,7 +185,7 @@ export const allProjects: Project[] = [
     id: '6',
     title: 'Fitness Tracking App',
     description: 'Comprehensive fitness tracking application with workout planning and progress analytics.',
-    image: 'images/pure-pettle.png',
+    image: 'images/kick-kraze.jpg',
     category: 'Mobile Apps',
     links: [
       {
@@ -220,7 +220,7 @@ export const allProjects: Project[] = [
     id: '7',
     title: 'Project Management Desktop App',
     description: 'Professional desktop application for team collaboration and project management with advanced features.',
-    image: 'images/pure-pettle.png',
+    image: 'images/cargo-jet.jpg',
     category: 'Desktop Applications',
     links: [
       {
