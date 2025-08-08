@@ -191,38 +191,33 @@ export const allProjects: Project[] = [
   },
   {
     id: '6',
-    title: 'Fitness Tracking App',
-    description: 'Comprehensive fitness tracking application with workout planning and progress analytics.',
-    image: 'images/kick-kraze.jpg',
+    title: 'LifeTrip - Travel App UI Design',
+    description: 'Designed wireframes and high-fidelity UI designs for the LifeTrip travel app, focusing on Stays, Search Rooms, and Search Flights sections. Emphasized clarity, responsiveness, and a vibrant visual style using advanced design techniques.',
+    image: 'images/life-trip.jpg',
     category: 'Mobile Apps',
     links: [
       {
-        type: 'figma-prototype',
-        url: 'https://figma.com/fitness-app',
-        label: 'View Prototype',
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/ZZQdOhIMmQBoxqm1J6dvWq/LifeTrip---Travel-App?m=auto&t=xSIqg4hnd4lh8FDn-6',
+        label: 'View Design',
         icon: 'fab fa-figma'
-      },
-      {
-        type: 'live-site',
-        url: 'https://example.com/fitness-app',
-        label: 'Live Demo',
-        icon: 'fas fa-external-link-alt'
       }
     ],
-    tags: ['Mobile Design', 'Data Visualization', 'UX Research'],
-    challenge: 'Users needed motivation and clear progress tracking to maintain their fitness routines effectively.',
-    solution: 'Designed an engaging interface with gamification elements, detailed analytics, and social features.',
-    results: '60% increase in user retention, 40% improvement in workout completion, and 50% higher engagement.',
-    overview: 'As Senior Product Designer, I led a 3-month fitness tracking app project. My role included user research, designing gamification features, and collaborating with developers to integrate analytics and wearable device support.',
-    tools: ['Figma', 'Principle', 'Amplitude', 'Hotjar'],
+    tags: ['UI Design', 'Wireframing', 'Mobile App', 'Figma'],
+    challenge: 'Create a visually engaging and easy-to-navigate travel app UI that adapts smoothly to different devices, while incorporating modern and creative design techniques.',
+    solution: 'Developed clear wireframes and hi-fi designs with Figma, using Auto Layout for responsiveness, consistent typography and symbols, and creative use of colors, gradients, and neon effects to evoke a travel-friendly atmosphere.',
+    results: 'Delivered a visually appealing and structured UI design with seamless responsiveness, consistent iconography, and dynamic styling that enhances user engagement.',
+    overview: 'As the UI designer, I applied Figma tools to create detailed wireframes and polished UI designs for key travel app sections. My work combined modern design trends like glassmorphism, neon effects, and angular elements with practical usability principles.',
+    tools: ['Figma', 'Auto Layout', 'Typography', 'Color Theory', 'Glassmorphism', 'Component-Based Design'],
     keyFeatures: [
-      'Personalized workout plans',
-      'Progress analytics dashboard',
-      'Social challenges and sharing',
-      'Gamification elements',
-      'Integration with wearables'
+      'Visually rich Stays page with captivating imagery',
+      'User-friendly Search Rooms with intuitive filters and consistent iconography',
+      'Streamlined Search Flights with modern angular design elements',
+      'Responsive layouts using Figma\'s Auto Layout',
+      'Creative use of colors, gradients, and neon effects',
+      'Consistent typography and symbol usage for design cohesion'
     ],
-    featured: false
+    featured: true
   },
   {
     id: '7',
