@@ -327,7 +327,7 @@ export const allProjects: Project[] = [
   },
   {
     id: '10',
-    title: 'YourDoc - Depression Management',
+    title: 'YourDoc - Depression Management App',
     description: 'YourDoc is a mobile application designed to help users overcome depression by providing access to guided courses. The high-fidelity UI design features brand identity elements like Roboto font and the brand color #0C99FF, utilizing advanced Figma techniques for a user-friendly and visually engaging experience.',
     image: 'images/yourdoc.jpg',
     category: 'Mobile Apps',
@@ -363,19 +363,40 @@ export const allProjects: Project[] = [
   },
   {
     id: '11',
-    title: '',
-    description: '',
-    image: '',
-    category: '',
-    links: [],
-    tags: [],
-    challenge: '',
-    solution: '',
-    results: '',
-    overview: '',
-    tools: [],
-    keyFeatures: [],
-    featured: false
+    title: 'Pure Petals Skin Care Product App',
+    description: 'Pure Petals is a skin care product selling app designed with intuitive navigation, visually appealing layouts, and user-friendly features. The high-fidelity UI design uses a warm color palette, 3D vector animations, and consistent typography to enhance user engagement and shopping experience.',
+    image: 'images/pure-pettle.png',
+    category: 'Mobile Apps',
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/fdatEQvl5lZYOMVGiwBow2/Pure-Petals--Skin-Care-Product-App-?m=auto&t=6lVJDNVUsdLeZtMp-6',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/fdatEQvl5lZYOMVGiwBow2/Pure-Petals-(Skin-Care-Product-App)?type=design&node-id=3-2&t=VyYlQMBkBYJjW5We-9&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A2&show-proto-sidebar=1',
+        label: 'View Prototype',
+        icon: 'fas fa-play-circle'
+      }
+    ],
+    tags: ['UI Design', 'Mobile App', '3D Animation', 'Color Theory', 'Typography', 'E-commerce'],
+    challenge: 'Create a visually attractive and easy-to-navigate skin care shopping app that incorporates 3D animations and a consistent, warm color palette for an immersive user experience.',
+    solution: 'Developed multiple key interfaces with intuitive navigation, including splash, home, favorites, product details, cart, checkout, and search. Applied 3D vector animations and a harmonious color scheme along with paired fonts to deliver a smooth and engaging shopping experience.',
+    results: 'Produced a high-fidelity UI design that increases user engagement and simplifies product browsing and purchasing through clear layouts and interactive features.',
+    overview: 'As UI/UX designer, I employed color theory, animation techniques, and font pairing in Figma to craft a cohesive and user-friendly mobile app design focused on skin care product sales.',
+    tools: ['Figma', '3D Vector Animation', 'Typography', 'Color Palette Design', 'Mobile UI Design'],
+    keyFeatures: [
+      'Elegant splash screen with Get Started button',
+      'Scrollable home navigation with product categories',
+      'Favorites page for quick access to liked products',
+      'Detailed product pages with ratings and reviews',
+      'Cart management with search, quantity adjustment, and checkout',
+      'Checkout with address and payment method management',
+      'Search interface showing recent and new products'
+    ],
+    featured: true
   },
   {
     id: '12',
