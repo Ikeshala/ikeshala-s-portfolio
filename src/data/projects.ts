@@ -297,18 +297,18 @@ export const allProjects: Project[] = [
     image: 'images/ward-management-system.jpg',
     category: 'Web Applications',
     links: [
-             {
-         type: 'figma-design',
-         url: 'https://www.figma.com/design/zV8M4qKmxxHvEtvmDoL2II/Ward-Management-System?m=auto&t=8GPVxDc13pXROqzo-6',
-         label: 'View Design',
-         icon: 'fab fa-figma'
-       },
-       {
-         type: 'figma-prototype',
-         url: 'https://www.figma.com/proto/zV8M4qKmxxHvEtvmDoL2II/Ward-Management-System?type=design&node-id=1-3&t=q4Srs7inrpKHoiwf-1&scaling=scale-down&page-id=0%3A1&mode=design',
-         label: 'View Prototype',
-         icon: 'fas fa-play-circle'
-       }
+      {
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/zV8M4qKmxxHvEtvmDoL2II/Ward-Management-System?m=auto&t=8GPVxDc13pXROqzo-6',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/zV8M4qKmxxHvEtvmDoL2II/Ward-Management-System?type=design&node-id=1-3&t=q4Srs7inrpKHoiwf-1&scaling=scale-down&page-id=0%3A1&mode=design',
+        label: 'View Prototype',
+        icon: 'fas fa-play-circle'
+      }
     ],
     tags: ['UI Design', 'Web Application', 'Glasmorphism', 'Minimalism', 'Healthcare'],
     challenge: 'Create a clean and modern ward management interface that simplifies complex workflows while maintaining an aesthetically pleasing and intuitive user experience.',
@@ -327,19 +327,39 @@ export const allProjects: Project[] = [
   },
   {
     id: '10',
-    title: '',
-    description: '',
-    image: '',
-    category: '',
-    links: [],
-    tags: [],
-    challenge: '',
-    solution: '',
-    results: '',
-    overview: '',
-    tools: [],
-    keyFeatures: [],
-    featured: false
+    title: 'YourDoc - Depression Management',
+    description: 'YourDoc is a mobile application designed to help users overcome depression by providing access to guided courses. The high-fidelity UI design features brand identity elements like Roboto font and the brand color #0C99FF, utilizing advanced Figma techniques for a user-friendly and visually engaging experience.',
+    image: 'images/yourdoc.jpg',
+    category: 'Mobile Apps',
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/46Q8M5ujhVDijYJZtuyTBa/YourDoc--Mobile-App-?m=auto&t=8GPVxDc13pXROqzo-6',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/46Q8M5ujhVDijYJZtuyTBa/YourDoc--Mobile-App-?type=design&node-id=1-7&t=ZfS5WLKWakSNU2Ac-9&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A7&show-proto-sidebar=1',
+        label: 'View Prototype',
+        icon: 'fas fa-play-circle'
+      }
+    ],
+    tags: ['UI Design', 'Mobile App', 'Brand Identity', 'Figma', 'Animation', 'Health & Wellness'],
+    challenge: 'Design a high-fidelity UI that clearly represents the course progression system for depression management, while maintaining a cohesive brand identity and enhancing user engagement through animations.',
+    solution: 'Created visually appealing splash, sign-in, and landing pages using Roboto font and brand colors. Incorporated animation vectors and interactive UI elements to guide users through course progression and ensure an intuitive experience.',
+    results: 'Produced a polished UI design that enhances user motivation and ease of use, supporting effective depression management through clear progress tracking and engaging visuals.',
+    overview: 'As UI designer, I leveraged Figma’s advanced tools to integrate brand elements, animation vectors, and progress indicators, delivering a seamless and supportive interface for users managing depression.',
+    tools: ['Figma', 'UI Animation', 'Prototyping', 'Branding', 'Mobile UI Design'],
+    keyFeatures: [
+      'Animated splash screen with brand logo',
+      'Sign-in page with secure authentication fields and checkbox',
+      'Personalized landing page displaying user name and course progress',
+      'Bottom navigation for easy access to core app sections',
+      'Locked course indicators with popup messages for progression',
+      'Visual progress tracking with percentage completion'
+    ],
+    featured: true
   },
   {
     id: '11',
