@@ -122,8 +122,8 @@ const Works = () => {
             </div>
           )}
 
-          {/* Load More Button (Alternative to scroll) */}
-          {!isLoading && visibleCount < filteredProjects.length && (
+          {/* Load More Button (Alternative to scroll) - Only show if there are 3+ more projects to load */}
+          {!isLoading && visibleCount < filteredProjects.length && (filteredProjects.length - visibleCount) >= 3 && (
             <div className="text-center mb-8">
               <button
                 onClick={loadMoreProjects}
@@ -138,7 +138,7 @@ const Works = () => {
           {/* Results Info */}
           <div className="text-center text-white/60 text-sm mb-8">
             Showing {displayedProjects.length} of {filteredProjects.length} projects
-            {visibleCount < filteredProjects.length && (
+            {visibleCount < filteredProjects.length && (filteredProjects.length - visibleCount) >= 3 && (
               <span className="block mt-1 text-xs">
                 Scroll down or click "Load More" to see more projects
               </span>
