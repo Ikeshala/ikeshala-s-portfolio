@@ -292,18 +292,37 @@ export const allProjects: Project[] = [
   },
   {
     id: '9',
-    title: '',
-    description: '',
-    image: '',
-    category: '',
-    links: [],
-    tags: [],
-    challenge: '',
-    solution: '',
-    results: '',
-    overview: '',
-    tools: [],
-    keyFeatures: [],
+    title: 'Ward Management System - Sri Lankan Hospital',
+    description: 'Developed a modern, user-friendly web application for ward management in a Sri Lankan hospital. The design emphasizes minimalism and Glasmorphism, creating an intuitive interface with clear navigation and a strong visual hierarchy.',
+    image: 'images/ward-management-system.jpg',
+    category: 'Web Applications',
+    links: [
+             {
+         type: 'figma-design',
+         url: 'https://www.figma.com/design/zV8M4qKmxxHvEtvmDoL2II/Ward-Management-System?m=auto&t=8GPVxDc13pXROqzo-6',
+         label: 'View Design',
+         icon: 'fab fa-figma'
+       },
+       {
+         type: 'figma-prototype',
+         url: 'https://www.figma.com/proto/zV8M4qKmxxHvEtvmDoL2II/Ward-Management-System?type=design&node-id=1-3&t=q4Srs7inrpKHoiwf-1&scaling=scale-down&page-id=0%3A1&mode=design',
+         label: 'View Prototype',
+         icon: 'fas fa-play-circle'
+       }
+    ],
+    tags: ['UI Design', 'Web Application', 'Glasmorphism', 'Minimalism', 'Healthcare'],
+    challenge: 'Create a clean and modern ward management interface that simplifies complex workflows while maintaining an aesthetically pleasing and intuitive user experience.',
+    solution: 'Implemented Glasmorphism design elements with a limited blue-toned color palette, minimalistic navigation, and clear visual hierarchy, enhancing usability and providing transparency with glass-like UI overlays.',
+    results: 'Delivered a visually appealing and easy-to-use application that streamlines ward management tasks, improving user efficiency and satisfaction.',
+    overview: 'As UI/UX designer, I developed a cohesive web app design combining modern trends like Glasmorphism and minimalism, focusing on dashboard clarity, patient record accessibility, ward allocation, scheduling, and billing.',
+    tools: ['Figma', 'Auto Layout', 'Glasmorphism Techniques', 'Prototyping', 'User-Centered Design'],
+    keyFeatures: [
+      'Dashboard with Glasmorphic cards for key metrics',
+      'Clear and minimal patient records forms',
+      'Drag-and-drop ward allocation with visual bed status',
+      'Simplified appointment scheduling with calendar view',
+      'Transparent billing and secure payment interface'
+    ],
     featured: false
   },
   {
