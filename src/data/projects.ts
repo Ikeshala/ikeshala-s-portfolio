@@ -127,7 +127,7 @@ export const allProjects: Project[] = [
     id: '4',
     title: 'MOS Burger Shop Management System - Web Application',
     description: 'A comprehensive web application designed to streamline and modernize the operations of "MOS Burgers," a local medium-scale business. The system enhances efficiency through organized product management, intuitive order processing, customer management, and robust reporting features.',
-    image: 'images/mos-burger-system.jpg',
+    image: 'images/mos-burger.jpg',
     category: 'Web Applications',
     links: [
       {
@@ -164,7 +164,7 @@ export const allProjects: Project[] = [
     id: '5',
     title: 'E & E Service Center Management System',
     description: 'Developed a comprehensive management system for an electronic and electrical items repair center, featuring separate interfaces for store employees and the owner. The system supports user management, order tracking, inventory control, and detailed reporting.',
-    image: 'images/ene-service-center.jpg',
+    image: 'images/e-&-e-service-center.jpg',
     category: 'Desktop Applications',
     links: [
       {
