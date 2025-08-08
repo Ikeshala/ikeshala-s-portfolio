@@ -359,7 +359,7 @@ export const allProjects: Project[] = [
       'Locked course indicators with popup messages for progression',
       'Visual progress tracking with percentage completion'
     ],
-    featured: true
+    featured: false
   },
   {
     id: '11',
@@ -400,18 +400,39 @@ export const allProjects: Project[] = [
   },
   {
     id: '12',
-    title: '',
-    description: '',
-    image: '',
-    category: '',
-    links: [],
-    tags: [],
-    challenge: '',
-    solution: '',
-    results: '',
-    overview: '',
-    tools: [],
-    keyFeatures: [],
+    title: 'KickKraze - Sneakers Website Store (Landing Page)',
+    description: 'KickKraze’s landing page features a modern, dynamic UI with neon effects and vibrant colors. Designed in Figma, it uses a neon color palette centered around CEEE4F, accented by F3F5F4, C1E0D1, and 3F3E3E. The page combines bold typography and linear gradients to create an immersive shopping experience.',
+    image: 'images/kick-kraze.jpg',
+    category: 'Web Solutions',
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/IL43QhoguhTvVDcfqe5o4L/KickKraze---Sneakers-Website-Store--Landing-Page-?m=auto&t=6lVJDNVUsdLeZtMp-6',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/IL43QhoguhTvVDcfqe5o4L/KickKraze---Sneakers-Website-Store-(Landing-Page)?type=design&node-id=1-7&t=iPIFazJuCGjjmycf-1&scaling=scale-down-width&page-id=0%3A1&mode=design',
+        label: 'View Prototype',
+        icon: 'fas fa-play-circle'
+      }
+    ],
+    tags: ['UI Design', 'Web Design', 'Neon Effect', 'Typography', 'User Experience', 'Figma'],
+    challenge: 'Create a visually striking landing page with neon effects that highlights the sneaker collection and allows easy customization of product filters.',
+    solution: 'Implemented neon color palettes and gradients with bold typography and a split layout featuring customizable product categories on the left and a navigation bar on the right, enhancing user engagement and navigation.',
+    results: 'Delivered a modern, immersive landing page UI that effectively captures user attention and simplifies exploration of sneaker collections.',
+    overview: 'As the UI designer, I used Figma to combine neon aesthetics, interactive filtering controls, and a clear navigation system to enhance the overall shopping experience.',
+    tools: ['Figma', 'Neon Design Techniques', 'Typography', 'Gradient Application', 'Web UI Design'],
+    keyFeatures: [
+      'Customizable product filters with radio buttons and checkboxes',
+      'Price range input for personalized shopping',
+      'Vibrant neon color palette with linear gradients',
+      'Navigation bar with categories, search, cart, favorites, and profile',
+      'Bold typography using Anton and Inter fonts',
+      'Visual emphasis on featured sneaker with neon effect',
+      'Recommended brands and quick add-to-cart/favorite options'
+    ],
     featured: false
   },
   {
