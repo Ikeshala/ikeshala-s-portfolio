@@ -437,18 +437,31 @@ export const allProjects: Project[] = [
   },
   {
     id: '13',
-    title: '',
-    description: '',
-    image: '',
-    category: '',
-    links: [],
-    tags: [],
-    challenge: '',
-    solution: '',
-    results: '',
-    overview: '',
-    tools: [],
-    keyFeatures: [],
+    title: 'Destination Dreamers Travel Agency Website',
+    description: 'Destination Dreamers home page offers an immersive, visually appealing experience with a simple logo, intuitive navigation, and vibrant images of tourism spots. The design uses rounded corners and a balanced black-and-white font palette to enhance readability and modern aesthetics.',
+    image: 'images/destination-dreamers.jpg',
+    category: 'Web Solutions',
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/mCcwfsQR8JjP151PH50kRP/Destination-Dreamers---Travel-Agency-Website?m=auto&t=6lVJDNVUsdLeZtMp-6',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      }
+    ],
+    tags: ['UI Design', 'Web Design', 'Travel Agency', 'User Engagement', 'Visual Hierarchy', 'Figma'],
+    challenge: 'Create a clean, inviting travel agency homepage that highlights beautiful destinations and simplifies the booking process while maintaining a modern look.',
+    solution: 'Implemented a balanced design using vibrant destination images, a clear navigation bar with essential options, user-friendly booking inputs, and modern UI techniques like rounded corners and contrasting fonts.',
+    results: 'Delivered a visually engaging homepage that enhances user interaction, simplifies destination discovery, and encourages bookings through intuitive design.',
+    overview: 'Led the UI design in Figma to craft a user-centric travel website homepage focused on aesthetics, clarity, and usability using modern design principles.',
+    tools: ['Figma', 'UI Design', 'Color Theory', 'Typography', 'User Engagement Techniques'],
+    keyFeatures: [
+      'Intuitive navigation bar with Home, Book Now, Packages, and Popular Places',
+      'Prominent Join button for user engagement',
+      'Vibrant, rounded-corner images showcasing tourism spots',
+      'User-friendly booking section with location, date, and guest inputs',
+      'Menu options for special offers and regional selections'
+    ],
     featured: false
   },
   {
