@@ -68,7 +68,7 @@ export const allProjects: Project[] = [
       },
       {
         type: 'figma-prototype',
-        url: 'https://www.figma.com/proto/wVzz79jC4ICug9EJaLZyxL/Cat-Food-Web?node-id=1-2&mode=design&t=hFJhqplQpSC5iZi3-1',
+        url: 'https://www.figma.com/proto/wVzz79jC4ICug9EJaLZyxL/Cat-Food-Web?node-id=1-2&t=kQvuAYolTnqPanu2-1&scaling=min-zoom&content-scaling=fixed',
         label: 'View Prototype',
         icon: 'fab fa-figma'
       }
@@ -76,7 +76,7 @@ export const allProjects: Project[] = [
     tags: ['UI Design', 'Landing Page', 'User Experience', 'Animation', 'Figma'],
     challenge: 'Create a visually appealing, brand-aligned landing page for a cat food brand that engages users, builds trust, and remains fully responsive across devices.',
     solution: 'Designed a modular layout in Figma using components for consistency and Auto Layout for responsiveness. Integrated animated sections, including veterinarian testimonials, to boost trust and create an interactive experience.',
-    results: 'Delivered a responsive, scalable, and brand-consistent landing page with reusable components, smooth animations, and clear visual hierarchy. Enhanced user engagement and credibility through interactive testimonial sections.',
+    results: 'Delivered a scalable, and brand-consistent landing page with reusable components, smooth animations, and clear visual hierarchy. Enhanced user engagement and credibility through interactive testimonial sections.',
     overview: 'As the UI/UX designer, I designed the Friskay landing page with a focus on responsiveness, consistency, and engagement. I applied Figma\'s component system, Auto Layout, and animation features to create a modern and visually appealing interface that aligns with the brand identity.',
     tools: ['Figma', 'Auto Layout', 'Prototype Animation', 'Component-Based Design'],
     keyFeatures: [
@@ -90,41 +90,38 @@ export const allProjects: Project[] = [
   },
   {
     id: '3',
-    title: 'MOS Burger Shop Management System - Web Application',
-    description: 'A full-featured web application designed to streamline the operations of MOS Burgers, a local food business, by replacing manual processes with a modern, efficient system for managing food items, orders, customers, and reporting.',
-    image: 'images/mos-burger-system.jpg',
-    category: 'Web Applications',
+    title: 'FurniCraft - Furniture Shop Mobile App',
+    description: 'A mobile application designed to deliver a seamless and enjoyable furniture shopping experience. The app features an intuitive interface, well-organized product categorization, smooth cart and checkout flows, and personalized user profiles, all aimed at enhancing user satisfaction.',
+    image: 'images/furnicraft.jpg',
+    category: 'Mobile Applications',
     links: [
       {
         type: 'figma-design',
-        url: 'https://figma.com/mos-burger-system',
+        url: 'https://www.figma.com/design/QcPKU2C7jHi87nSYSekCYv/Furniture-Shop-Mobile-App-Design?m=auto&t=xSIqg4hnd4lh8FDn-6',
         label: 'View Design',
         icon: 'fab fa-figma'
       },
       {
-        type: 'github',
-        url: 'https://github.com/example/mos-burger-system',
-        label: 'View Code',
-        icon: 'fab fa-github'
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/QcPKU2C7jHi87nSYSekCYv/Furniture-Shop-Mobile-App-Design?type=design&node-id=1-2&t=eFCEEzBOaRofEKfG-1&scaling=scale-down&page-id=0%3A1',
+        label: 'View Prototype',
+        icon: 'fab fa-figma'
       }
     ],
-    tags: ["UI Design", "Web Application", "Inventory Management", "Order Management", "Customer Management"],
-    challenge: 'The business relied on manual transaction and inventory methods, which caused inefficiencies, missed sales opportunities, and poor tracking of customer orders and expired items.',
-    solution: 'Developed a modular, user-friendly web system covering all operational areas—inventory, ordering, customer handling, and reporting. Designed clear navigation and intuitive interfaces for users to manage daily tasks efficiently.',
-    results: 'Significantly improved business efficiency by automating manual processes. Enhanced visibility of inventory and order history. Enabled the business to track monthly and annual sales and build a customer base for future campaigns.',
-    overview: 'As the UI/UX Designer and developer, I designed the MOS Burger Management System to simplify business workflows. I created clean, categorized layouts for food listings, streamlined the order flow, and designed interfaces for managing customers, reports, and inventory updates. The project helped modernize day-to-day operations and brought better structure to internal processes.',
-    tools: ['Figma', 'HTML', 'CSS', 'JavaScript', 'MySQL', 'PHP'],
+    tags: ['UI Design', 'Mobile App', 'E-commerce', 'Interaction Design', 'User Flow Optimization'],
+    challenge: 'Design a mobile-first e-commerce platform for a furniture store that provides a visually appealing experience while ensuring intuitive navigation, easy product discovery, and a secure checkout process.',
+    solution: 'Developed a clean and engaging mobile interface with clear navigation, organized categories, and detailed product pages. Integrated cart and secure checkout flows, and built a personalized profile section to help users manage orders and preferences.',
+    results: 'Delivered a user-centered e-commerce mobile app that enhances product exploration, simplifies purchasing, and improves user retention through personalized features.',
+    overview: 'As the UI/UX designer, I focused on crafting a furniture shopping app with smooth user flows, intuitive navigation, and appealing visuals. I incorporated e-commerce best practices, responsive layouts, and interaction design techniques to ensure both usability and visual consistency.',
+    tools: ['Figma', 'Prototyping', 'Interaction Design'],
     keyFeatures: [
-      "Home section with categorized food items and item details",
-      "Search functionality by name, code, or category",
-      "Inventory management with add, update, delete options",
-      "Expiration alerts and removal for outdated items",
-      "Order management with cart system, discount logic, and order tracking",
-      "Customer management with profile editing and order history",
-      "Monthly and annual sales report generation",
-      "Customer ranking based on order frequency"
+      'Inviting home screen with featured products and promotions',
+      'Organized category-based item browsing',
+      'Detailed product pages with cart functionality',
+      'Streamlined and secure checkout process',
+      'Personalized user profile with order history and preferences'
     ],
-    featured: true
+    featured: false
   },
   {
     id: '4',
