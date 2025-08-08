@@ -537,6 +537,42 @@ export const allProjects: Project[] = [
       'WCAG-compliant design for accessibility'
     ],
     featured: false
+  },
+  {
+    id: '16',
+    title: 'Flavor Leap – Fast Food Ordering App',
+    description: 'Flavor Leap is a high-fidelity UI design for a modern fast food ordering mobile app, focused on delivering an engaging UI, seamless UX, and exceptional customer experience (CX). The design includes a vibrant splash screen, landing page, sign-in and verification flows, and a home screen featuring various food categories for easy browsing.',
+    image: 'images/flavor-leap.jpg',
+    category: 'Mobile Apps',
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/cb9E0evYVnKXU5plFXR3QP/Flavor-Leap.--Fast-food-Ordering-App?m=auto&t=IujSK6UbVTdqMrHu-6',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/cb9E0evYVnKXU5plFXR3QP/Flavor-Leap.--Fast-food-Ordering-App?type=design&node-id=22-121&t=bTbhwas8YQaQC5OE-9&scaling=scale-down&page-id=0%3A1&starting-point-node-id=22%3A121&show-proto-sidebar=1',
+        label: 'View Prototype',
+        icon: 'fas fa-play-circle'
+      }
+    ],
+    tags: ['UI Design', 'Mobile App', 'Food Ordering', 'UX Design', 'Customer Experience', 'Figma'],
+    challenge: 'Design a fast food ordering app with an intuitive user flow that encourages easy browsing and ordering, while delivering a visually appetizing and cohesive experience.',
+    solution: 'Created a vibrant, warm color palette featuring orange, brown, and white hues, integrated high-quality food photography, designed modern UI components, and applied subtle motion effects to enhance engagement and guide users seamlessly from item selection to checkout.',
+    results: 'A polished mobile app design that improves user engagement and streamlines the ordering process, providing customers with a smooth and appetizing food ordering experience.',
+    overview: 'Led the UI/UX design for Flavor Leap in Figma, covering splash to checkout flows, focusing on creating a warm and inviting visual style paired with clear navigation and smooth interactions.',
+    tools: ['Figma', 'UI Design', 'UX Design', 'Motion Design'],
+    keyFeatures: [
+      'Warm and appetizing color palette',
+      'High-quality food photography integration',
+      'Modern UI components with subtle animations',
+      'Clear category browsing and item detail pages',
+      'Streamlined cart and checkout experience',
+      'User-friendly sign-in and verification flows'
+    ],
+    featured: false
   }
 ]
 
