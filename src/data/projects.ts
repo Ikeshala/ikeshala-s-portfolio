@@ -221,36 +221,36 @@ export const allProjects: Project[] = [
   },
   {
     id: '7',
-    title: 'Project Management Desktop App',
-    description: 'Professional desktop application for team collaboration and project management with advanced features.',
-    image: 'images/cargo-jet.jpg',
-    category: 'Desktop Applications',
+    title: 'Community Cleanup Volunteer Sign Up',
+    description: 'Designed a user-friendly sign-up interface for a community cleanup event, aimed at encouraging volunteers by evoking a sense of community, environmental responsibility, and engagement through vibrant visuals and clear navigation.',
+    image: 'images/community-cleanup-volunteer-sign-up.jpg',
+    category: 'Mobile Apps',
     links: [
       {
         type: 'figma-design',
-        url: 'https://figma.com/project-management-app',
+        url: 'https://www.figma.com/design/7dIWTIk1ERBDFUGYkFNph3/Community-Cleanup-Volunteer-Sign-Up?m=auto&t=SNLkgYBvmWN2GBC9-6',
         label: 'View Design',
         icon: 'fab fa-figma'
       },
       {
-        type: 'github',
-        url: 'https://github.com/example/project-management-app',
-        label: 'View Code',
-        icon: 'fab fa-github'
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/7dIWTIk1ERBDFUGYkFNph3/Community-Cleanup-Volunteer-Sign-Up?type=design&node-id=2-12&t=MFMzvfRqMa5f9HZj-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A12&mode=design',
+        label: 'View Prototype',
+        icon: 'fab fa-figma'
       }
     ],
-    tags: ['Desktop Design', 'UX Research', 'Data Visualization'],
-    challenge: 'Teams needed a powerful yet intuitive desktop application for managing complex projects with multiple stakeholders and dependencies.',
-    solution: 'Designed a comprehensive desktop interface with advanced project management features, real-time collaboration, and intuitive navigation.',
-    results: '70% improvement in project delivery time, 45% reduction in communication overhead, and 80% user satisfaction rate.',
-    overview: 'As Lead UX Designer, I designed a comprehensive desktop application for project management. My role involved extensive user research with project managers, designing complex data visualizations, and creating an intuitive interface for managing large-scale projects.',
-    tools: ['Figma', 'Adobe XD', 'Sketch', 'UserTesting'],
+    tags: ['UI Design', 'Volunteer Sign-Up', 'Community', 'Environmental Design', 'Figma'],
+    challenge: 'Create an inviting and engaging interface to motivate users to volunteer for a community cleanup, using friendly visuals and easy navigation.',
+    solution: 'Developed a vibrant UI with eco-friendly colors, charming illustrations of environmental themes, and clear calls-to-action for event info and sign-up sections to guide users smoothly through the process.',
+    results: 'Delivered a visually appealing and easy-to-use sign-up interface that enhances user engagement and encourages community participation.',
+    overview: 'As the UI designer, I leveraged Figma to create a cohesive interface featuring a catchy headline, clear event information, an intuitive sign-up form, and integrated social media buttons—all designed with environmental and community-focused aesthetics.',
+    tools: ['Figma', 'Illustration Integration', 'Component-Based Design'],
     keyFeatures: [
-      'Advanced project timeline visualization',
-      'Real-time team collaboration tools',
-      'Resource allocation dashboard',
-      'Custom workflow automation',
-      'Cross-platform synchronization'
+      'Catchy home headline with eco-friendly vibrant colors',
+      'Event Information section with date, time, location, and illustrations',
+      'User-friendly sign-up form collecting essential details',
+      'Navigation buttons linking sections smoothly',
+      'Social media integration with share and follow buttons'
     ],
     featured: false
   }

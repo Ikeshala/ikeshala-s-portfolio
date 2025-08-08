@@ -1,0 +1,62 @@
+warning: in the working copy of 'src/data/projects.ts', CRLF will be replaced by LF the next time Git touches it
+[1mdiff --git a/src/data/projects.ts b/src/data/projects.ts[m
+[1mindex 780d61b..e304a4f 100644[m
+[1m--- a/src/data/projects.ts[m
+[1m+++ b/src/data/projects.ts[m
+[36m@@ -221,36 +221,36 @@[m [mexport const allProjects: Project[] = [[m
+   },[m
+   {[m
+     id: '7',[m
+[31m-    title: 'Project Management Desktop App',[m
+[31m-    description: 'Professional desktop application for team collaboration and project management with advanced features.',[m
+[31m-    image: 'images/cargo-jet.jpg',[m
+[31m-    category: 'Desktop Applications',[m
+[32m+[m[32m    title: 'Community Cleanup Volunteer Sign Up',[m
+[32m+[m[32m    description: 'Designed a user-friendly sign-up interface for a community cleanup event, aimed at encouraging volunteers by evoking a sense of community, environmental responsibility, and engagement through vibrant visuals and clear navigation.',[m
+[32m+[m[32m    image: 'images/community-cleanup-volunteer-sign-up.jpg',[m
+[32m+[m[32m    category: 'Mobile Apps',[m
+     links: [[m
+       {[m
+         type: 'figma-design',[m
+[31m-        url: 'https://figma.com/project-management-app',[m
+[32m+[m[32m        url: 'https://www.figma.com/design/7dIWTIk1ERBDFUGYkFNph3/Community-Cleanup-Volunteer-Sign-Up?m=auto&t=SNLkgYBvmWN2GBC9-6',[m
+         label: 'View Design',[m
+         icon: 'fab fa-figma'[m
+       },[m
+       {[m
+[31m-        type: 'github',[m
+[31m-        url: 'https://github.com/example/project-management-app',[m
+[31m-        label: 'View Code',[m
+[31m-        icon: 'fab fa-github'[m
+[32m+[m[32m        type: 'figma-prototype',[m
+[32m+[m[32m        url: 'https://www.figma.com/proto/7dIWTIk1ERBDFUGYkFNph3/Community-Cleanup-Volunteer-Sign-Up?type=design&node-id=2-12&t=MFMzvfRqMa5f9HZj-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A12&mode=design',[m
+[32m+[m[32m        label: 'View Prototype',[m
+[32m+[m[32m        icon: 'fab fa-figma'[m
+       }[m
+     ],[m
+[31m-    tags: ['Desktop Design', 'UX Research', 'Data Visualization'],[m
+[31m-    challenge: 'Teams needed a powerful yet intuitive desktop application for managing complex projects with multiple stakeholders and dependencies.',[m
+[31m-    solution: 'Designed a comprehensive desktop interface with advanced project management features, real-time collaboration, and intuitive navigation.',[m
+[31m-    results: '70% improvement in project delivery time, 45% reduction in communication overhead, and 80% user satisfaction rate.',[m
+[31m-    overview: 'As Lead UX Designer, I designed a comprehensive desktop application for project management. My role involved extensive user research with project managers, designing complex data visualizations, and creating an intuitive interface for managing large-scale projects.',[m
+[31m-    tools: ['Figma', 'Adobe XD', 'Sketch', 'UserTesting'],[m
+[32m+[m[32m    tags: ['UI Design', 'Volunteer Sign-Up', 'Community', 'Environmental Design', 'Figma'],[m
+[32m+[m[32m    challenge: 'Create an inviting and engaging interface to motivate users to volunteer for a community cleanup, using friendly visuals and easy navigation.',[m
+[32m+[m[32m    solution: 'Developed a vibrant UI with eco-friendly colors, charming illustrations of environmental themes, and clear calls-to-action for event info and sign-up sections to guide users smoothly through the process.',[m
+[32m+[m[32m    results: 'Delivered a visually appealing and easy-to-use sign-up interface that enhances user engagement and encourages community participation.',[m
+[32m+[m[32m    overview: 'As the UI designer, I leveraged Figma to create a cohesive interface featuring a catchy headline, clear event information, an intuitive sign-up form, and integrated social media buttons—all designed with environmental and community-focused aesthetics.',[m
+[32m+[m[32m    tools: ['Figma', 'Illustration Integration', 'Component-Based Design'],[m
+     keyFeatures: [[m
+[31m-      'Advanced project timeline visualization',[m
+[31m-      'Real-time team collaboration tools',[m
+[31m-      'Resource allocation dashboard',[m
+[31m-      'Custom workflow automation',[m
+[31m-      'Cross-platform synchronization'[m
+[32m+[m[32m      'Catchy home headline with eco-friendly vibrant colors',[m
+[32m+[m[32m      'Event Information section with date, time, location, and illustrations',[m
+[32m+[m[32m      'User-friendly sign-up form collecting essential details',[m
+[32m+[m[32m      'Navigation buttons linking sections smoothly',[m
+[32m+[m[32m      'Social media integration with share and follow buttons'[m
+     ],[m
+     featured: false[m
+   }[m
