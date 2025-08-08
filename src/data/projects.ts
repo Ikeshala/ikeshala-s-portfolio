@@ -45,11 +45,11 @@ export const allProjects: Project[] = [
     overview: 'As the UI/UX designer and developer of ThogaKade, I focused on building a smooth user experience for managing transactions. I used JavaFX and Scene Builder for the UI, applied CSS for consistent styling, and integrated JDBC to connect with a MySQL database, ensuring data reliability.',
     tools: ['Java', 'JavaFX', 'CSS', 'Scene Builder', 'JDBC', 'MySQL'],
     keyFeatures: [
-      "User-friendly dashboard for quick navigation",
-      "Layered architecture for easy maintenance",
-      "Modern UI built with JavaFX and CSS",
-      "Robust data integration using JDBC with MySQL",
-      "Packaged in JAR and EXE formats for easy deployment"
+      'User-friendly dashboard for quick navigation',
+      'Layered architecture for easy maintenance',
+      'Modern UI built with JavaFX and CSS',
+      'Robust data integration using JDBC with MySQL',
+      'Packaged in JAR and EXE formats for easy deployment'
     ],
     featured: false
   },
