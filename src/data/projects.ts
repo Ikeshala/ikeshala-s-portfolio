@@ -466,18 +466,38 @@ export const allProjects: Project[] = [
   },
   {
     id: '14',
-    title: '',
-    description: '',
-    image: '',
-    category: '',
-    links: [],
-    tags: [],
-    challenge: '',
-    solution: '',
-    results: '',
-    overview: '',
-    tools: [],
-    keyFeatures: [],
+    title: 'Sapphire Sands Hotel Website',
+    description: 'The Sapphire Sands Hotel website offers an immersive, luxurious experience highlighting the hotel’s amenities, elegant design, and scenic surroundings. The UI focuses on intuitive navigation and visually appealing elements reflecting tranquility and sophistication.',
+    image: 'images/sapphire-sands.jpg',
+    category: 'Web Solutions',
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/XJt5k5Enkh545SMydbosL5/Sapphire-Sands---Hotel-Website?m=auto&t=6lVJDNVUsdLeZtMp-6',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/XJt5k5Enkh545SMydbosL5/Sapphire-Sands---Hotel-Website?type=design&node-id=2005-20&t=AwN8VJy4ZVJWxWwf-1&scaling=scale-down-width&page-id=0%3A1&mode=design',
+        label: 'View Prototype',
+        icon: 'fas fa-play-circle'
+      }
+    ],
+    tags: ['UI Design', 'Web Design', 'Hotel Website', 'Branding', 'Responsive Design', 'Figma'],
+    challenge: 'Create a visually elegant and user-friendly hotel website that showcases the hotel’s luxury features and simplifies booking and navigation.',
+    solution: 'Designed a clean, visually rich interface with high-quality images, intuitive menus, clear call-to-actions, interactive room galleries, and seamless booking functionality.',
+    results: 'Developed a sophisticated website UI that enhances user engagement, simplifies navigation, and supports online reservations effectively.',
+    overview: 'Led the UI/UX design using Figma to develop a high-fidelity website for Sapphire Sands Hotel, focusing on branding, usability, and responsive design principles.',
+    tools: ['Figma', 'UI/UX Design', 'Branding', 'Image Editing'],
+    keyFeatures: [
+      'Elegant visuals with high-resolution hotel images',
+      'Intuitive navigation menu with clear CTAs',
+      'Detailed room showcase with descriptions and interactive galleries',
+      'Dining section with reservation options',
+      'Amenities and services booking',
+      'Contact info and booking engine integration'
+    ],
     featured: false
   },
   {
