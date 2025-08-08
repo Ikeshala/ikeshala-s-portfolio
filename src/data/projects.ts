@@ -93,7 +93,7 @@ export const allProjects: Project[] = [
     title: 'FurniCraft - Furniture Shop Mobile App',
     description: 'A mobile application designed to deliver a seamless and enjoyable furniture shopping experience. The app features an intuitive interface, well-organized product categorization, smooth cart and checkout flows, and personalized user profiles, all aimed at enhancing user satisfaction.',
     image: 'images/furnicraft.jpg',
-    category: 'Mobile Applications',
+    category: 'Mobile Apps',
     links: [
       {
         type: 'figma-design',
@@ -125,36 +125,38 @@ export const allProjects: Project[] = [
   },
   {
     id: '4',
-    title: 'Travel Booking App',
-    description: 'Modern travel booking application with intuitive search, booking, and itinerary management features.',
-    image: 'images/destination-dreamers.jpg',
-    category: 'Mobile Apps',
+    title: 'MOS Burger Shop Management System - Web Application',
+    description: 'A comprehensive web application designed to streamline and modernize the operations of "MOS Burgers," a local medium-scale business. The system enhances efficiency through organized product management, intuitive order processing, customer management, and robust reporting features.',
+    image: 'images/mos-burger-system.jpg',
+    category: 'Web Applications',
     links: [
       {
-        type: 'figma-prototype',
-        url: 'https://figma.com/travel-app',
-        label: 'View Prototype',
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/e4ddgFjUWbfdNwb7JzK4yb/MOS-Burger-Shop-Management-System---Web-Application?m=auto&t=xSIqg4hnd4lh8FDn-6',
+        label: 'View Design',
         icon: 'fab fa-figma'
       },
       {
-        type: 'live-site',
-        url: 'https://example.com/travel-app',
-        label: 'Live Demo',
-        icon: 'fas fa-external-link-alt'
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/e4ddgFjUWbfdNwb7JzK4yb/MOS_Burgers_System-(Prototype)?node-id=1-2&mode=design&t=M7n2EezQE2yuZLGi-1',
+        label: 'View Prototype',
+        icon: 'fab fa-figma'
       }
     ],
-    tags: ['Mobile Design', 'UX Research', 'Prototyping'],
-    challenge: 'Users found the booking process complex and time-consuming, leading to high abandonment rates.',
-    solution: 'Streamlined the booking flow with smart search, one-click booking, and personalized recommendations.',
-    results: '55% increase in booking completion, 40% reduction in search time, and 30% improvement in user retention.',
-    overview: 'As Product Designer, I led a 3-month travel booking app project. My role involved user research, journey mapping, prototyping the booking flow, and collaborating with product managers to optimize conversion rates.',
-    tools: ['Figma', 'InVision', 'Zeplin', 'Amplitude'],
+    tags: ['UI Design', 'Web Application', 'Order Processing', 'Report Generation'],
+    challenge: 'The business relied on manual transaction processes, leading to inefficiencies in order handling, inventory tracking, and customer record management.',
+    solution: 'Developed a fully integrated web-based management system with categorized food listings, advanced search capabilities, store and order management tools, customer data tracking, and automated report generation.',
+    results: 'Significantly improved operational efficiency by reducing manual errors, speeding up order processing, and providing valuable business insights through detailed reporting.',
+    overview: 'As the UI/UX designer and developer, I created an intuitive interface for both store management and customer-facing functionalities. I implemented user-friendly navigation, automated reporting, and optimized workflows to support business growth and customer satisfaction.',
+    tools: ['Figma', 'Auto Layout', 'Components', 'Prototyping', 'Interaction Design'],
     keyFeatures: [
-      'Smart search functionality',
-      'One-click booking system',
-      'Personalized recommendations',
-      'Real-time price tracking',
-      'Seamless payment integration'
+      'Categorized food item display with pricing and availability',
+      'Advanced search by name, code, or category',
+      'Store management with item add/update/delete functionality',
+      'Order management with cart and discount features',
+      'Customer management and order history tracking',
+      'Automated PDF receipt generation',
+      'Monthly, annual, and top-customer sales reports'
     ],
     featured: false
   },
