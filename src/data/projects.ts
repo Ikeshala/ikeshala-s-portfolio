@@ -502,18 +502,40 @@ export const allProjects: Project[] = [
   },
   {
     id: '15',
-    title: '',
-    description: '',
-    image: '',
-    category: '',
-    links: [],
-    tags: [],
-    challenge: '',
-    solution: '',
-    results: '',
-    overview: '',
-    tools: [],
-    keyFeatures: [],
+    title: 'Clothify – Fashion Store Website',
+    description: 'The Clothify fashion store website delivers a premium, visually engaging shopping experience that reflects the brand’s modern and stylish identity. This high-fidelity UI design emphasizes brand consistency, visual appeal, and user-friendly interactions, keeping customers engaged and inspired to explore the collection.',
+    image: 'images/clothify.jpg',
+    category: 'Web Solutions',
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/mHwZAnJeh3llHyK6GBGwP7/Clothify---Fashion-Store-Website?m=auto&t=IujSK6UbVTdqMrHu-6',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/mHwZAnJeh3llHyK6GBGwP7/Clothify?type=design&node-id=8-202&t=xqqlwUe2eWzoMy7P-1&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=8%3A202&mode=design',
+        label: 'View Prototype',
+        icon: 'fas fa-play-circle'
+      }
+    ],
+    tags: ['UI Design', 'Web Design', 'Fashion Website', 'Branding', 'Responsive Design', 'Figma'],
+    challenge: 'Create a stylish and modern e-commerce website that captures Clothify’s brand essence while delivering an accessible and seamless shopping experience across all devices.',
+    solution: 'Developed a cohesive high-fidelity UI with a sophisticated color palette, curated photography, intuitive navigation, and accessible WCAG-compliant components. Designed all major page types, ensuring a smooth browsing and purchasing flow.',
+    results: 'A modern and visually appealing online fashion store design that enhances brand identity, improves customer engagement, and provides an enjoyable, accessible shopping experience.',
+    overview: 'Led the UI/UX design process in Figma to create Clothify’s web store, from branding and visual identity to interactive prototype, focusing on aesthetics, usability, and accessibility.',
+    tools: ['Figma', 'UI/UX Design', 'Branding', 'Image Editing', 'Responsive Design'],
+    keyFeatures: [
+      'Elegant brand logo and sophisticated color palette',
+      'High-quality photography showcasing textures and styles',
+      'Home, category, and product pages with consistent design',
+      'Intuitive login and sign-up pages',
+      'New arrivals and exclusive “Hustle” collection page',
+      'Single product pages with large visuals and variations',
+      '404 error page with branded visuals',
+      'WCAG-compliant design for accessibility'
+    ],
     featured: false
   }
 ]
