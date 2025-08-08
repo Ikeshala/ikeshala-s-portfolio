@@ -615,7 +615,6 @@ export const allProjects: Project[] = [
     featured: false
   }
 ]
-
 export const getProjectById = (id: string): Project | undefined => {
   return allProjects.find(project => project.id === id)
 } 

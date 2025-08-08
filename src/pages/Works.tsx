@@ -33,8 +33,15 @@ const Works = () => {
 
   // Reset and load initial projects when filter changes
   useEffect(() => {
-    setVisibleCount(6)
-    setDisplayedProjects(filteredProjects.slice(0, 6))
+    if (activeFilter === 'All Projects') {
+      // For "All Projects", use pagination (show 6 initially)
+      setVisibleCount(6)
+      setDisplayedProjects(filteredProjects.slice(0, 6))
+    } else {
+      // For individual categories, show all projects
+      setVisibleCount(filteredProjects.length)
+      setDisplayedProjects(filteredProjects)
+    }
   }, [activeFilter, filteredProjects])
 
   // Load more projects function
@@ -122,8 +129,8 @@ const Works = () => {
             </div>
           )}
 
-          {/* Load More Button (Alternative to scroll) - Only show if there are 3+ more projects to load */}
-          {!isLoading && visibleCount < filteredProjects.length && (filteredProjects.length - visibleCount) >= 3 && (
+          {/* Load More Button - Only show for "All Projects" and if there are 3+ more projects to load */}
+          {activeFilter === 'All Projects' && !isLoading && visibleCount < filteredProjects.length && (filteredProjects.length - visibleCount) >= 3 && (
             <div className="text-center mb-8">
               <button
                 onClick={loadMoreProjects}
@@ -137,11 +144,17 @@ const Works = () => {
 
           {/* Results Info */}
           <div className="text-center text-white/60 text-sm mb-8">
-            Showing {displayedProjects.length} of {filteredProjects.length} projects
-            {visibleCount < filteredProjects.length && (filteredProjects.length - visibleCount) >= 3 && (
-              <span className="block mt-1 text-xs">
-                Scroll down or click "Load More" to see more projects
-              </span>
+            {activeFilter === 'All Projects' ? (
+              <>
+                Showing {displayedProjects.length} of {filteredProjects.length} projects
+                {visibleCount < filteredProjects.length && (filteredProjects.length - visibleCount) >= 3 && (
+                  <span className="block mt-1 text-xs">
+                    Scroll down or click "Load More" to see more projects
+                  </span>
+                )}
+              </>
+            ) : (
+              `Showing all ${filteredProjects.length} ${activeFilter} projects`
             )}
           </div>
         </section>
