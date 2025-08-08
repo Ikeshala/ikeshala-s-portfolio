@@ -162,30 +162,30 @@ export const allProjects: Project[] = [
   },
   {
     id: '5',
-    title: 'Educational Platform',
-    description: 'Interactive learning platform with personalized content delivery and progress tracking.',
-    image: 'images/community-cleanup-volunteer-sign-up.jpg',
-    category: 'Web Applications',
+    title: 'E & E Service Center Management System',
+    description: 'Developed a comprehensive management system for an electronic and electrical items repair center, featuring separate interfaces for store employees and the owner. The system supports user management, order tracking, inventory control, and detailed reporting.',
+    image: 'images/ene-service-center.jpg',
+    category: 'Desktop Applications',
     links: [
       {
-        type: 'figma-design',
-        url: 'https://figma.com/education-platform',
-        label: 'View Design',
-        icon: 'fab fa-figma'
+        type: 'github',
+        url: 'https://github.com/Ikeshala/EE_Service_Center_App.git',
+        label: 'View Code',
+        icon: 'fab fa-github'
       }
     ],
-    tags: ['UX Research', 'UI Design', 'User Testing'],
-    challenge: 'Students struggled with content discovery and progress tracking, leading to low engagement and completion rates.',
-    solution: 'Created an adaptive learning interface with personalized content paths and clear progress indicators.',
-    results: '50% increase in course completion, 45% improvement in engagement, and 35% higher satisfaction scores.',
-    overview: 'As UX Designer, I worked on a 4-month educational platform project. My responsibilities included user research with students and educators, designing adaptive learning interfaces, and implementing gamification elements to improve engagement.',
-    tools: ['Figma', 'Miro', 'UserTesting', 'Google Analytics'],
+    tags: ['UI Design', 'Desktop Application', 'Inventory Management', 'Order Management', 'User Authentication'],
+    challenge: 'Manual handling of repair orders, inventory, and customer management created inefficiencies and limited visibility over service progress and sales.',
+    solution: 'Built a desktop application with role-based user access, detailed order lifecycle management, inventory tracking with process zones, and automated reporting with graphical data visualization.',
+    results: 'Streamlined service center operations with clear status tracking, improved customer communication, and accurate sales reporting, reducing errors and improving workflow.',
+    overview: 'As UI/UX designer and developer, I crafted a role-based interface using Scene Builder and JavaFX, focusing on intuitive navigation, real-time order updates, secure user authentication, and comprehensive reporting using Jasper Reports.',
+    tools: ['Scene Builder', 'JavaFX', 'Jasper Reports', 'MySQL', 'CSS', 'JDBC'],
     keyFeatures: [
-      'Adaptive learning paths',
-      'Progress tracking dashboard',
-      'Interactive assessments',
-      'Social learning features',
-      'Mobile-responsive design'
+      'Role-based user registration and secure authentication',
+      'Complete order management with status tracking and email notifications',
+      'Item catalog with category-based inventory management',
+      'Quantity and process zone tracking with color-coded statuses',
+      'Comprehensive reporting: orders, customers, sales with charts'
     ],
     featured: false
   },
