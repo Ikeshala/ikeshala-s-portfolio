@@ -51,48 +51,48 @@ export const allProjects: Project[] = [
       "Robust data integration using JDBC with MySQL",
       "Packaged in JAR and EXE formats for easy deployment"
     ],
-    featured: true
+    featured: false
   },
   {
     id: '2',
     title: 'Friskay - Cat Food Web Page',
-    description: 'Designed and developed an engaging cat food landing page focused on a visually appealing interface, integrated animations, and responsive design.',
+    description: 'An engaging cat food landing page designed to combine visual appeal, smooth animations, and responsive design. The layout emphasizes brand personality while ensuring a user-friendly experience through well-structured components and Auto Layout.',
     image: 'images/friskay-cat-food.jpg',
     category: 'Web Solutions',
     links: [
       {
-        type: 'figma-prototype',
-        url: 'https://figma.com/banking-app',
-        label: 'View Prototype',
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/wVzz79jC4ICug9EJaLZyxL/Cat-Food-Web?m=auto&t=xSIqg4hnd4lh8FDn-6',
+        label: 'View Design',
         icon: 'fab fa-figma'
       },
       {
-        type: 'live-site',
-        url: 'https://example.com/banking-app',
-        label: 'Live Demo',
-        icon: 'fas fa-external-link-alt'
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/wVzz79jC4ICug9EJaLZyxL/Cat-Food-Web?node-id=1-2&mode=design&t=hFJhqplQpSC5iZi3-1',
+        label: 'View Prototype',
+        icon: 'fab fa-figma'
       }
     ],
-    tags: ['UI Design', 'Landing Page', 'Responsive Design', 'Animation'],
-    challenge: 'Create a visually appealing and brand-consistent web page for a cat food brand, incorporating engaging elements while ensuring responsiveness and user trust.',
-    solution: 'Designed a modular landing page using Figma components and Auto Layout. Developed a strong visual hierarchy with animated elements and testimonial integration to build trust and improve engagement.',
-    results: 'Achieved a dynamic, responsive, and brand-aligned landing page with consistent UI components and smooth animations. Improved visual engagement and user credibility through testimonials.',
-    overview: 'As a UI/UX designer, I designed the Friskay landing page to align with brand goals and user expectations. I used Figma\'s component system and Auto Layout to ensure responsive behavior, integrated animation for engagement, and designed a testimonial section to build trust through veterinary endorsements.',
-    tools: ['Figma', 'Auto Layout', 'Prototype Animation'],
+    tags: ['UI Design', 'Landing Page', 'User Experience', 'Animation', 'Figma'],
+    challenge: 'Create a visually appealing, brand-aligned landing page for a cat food brand that engages users, builds trust, and remains fully responsive across devices.',
+    solution: 'Designed a modular layout in Figma using components for consistency and Auto Layout for responsiveness. Integrated animated sections, including veterinarian testimonials, to boost trust and create an interactive experience.',
+    results: 'Delivered a responsive, scalable, and brand-consistent landing page with reusable components, smooth animations, and clear visual hierarchy. Enhanced user engagement and credibility through interactive testimonial sections.',
+    overview: 'As the UI/UX designer, I designed the Friskay landing page with a focus on responsiveness, consistency, and engagement. I applied Figma\'s component system, Auto Layout, and animation features to create a modern and visually appealing interface that aligns with the brand identity.',
+    tools: ['Figma', 'Auto Layout', 'Prototype Animation', 'Component-Based Design'],
     keyFeatures: [
       'Intuitive header and navigation bar',
-      'Reusable components built in Figma',
-      'Responsive Auto Layout for different screen sizes',
-      'Visually strong hero section with concise messaging',
-      'Veterinarian testimonials with engaging animations'
+      'Reusable design components built in Figma',
+      'Responsive layout using Auto Layout',
+      'Hero section with compelling visuals and concise copy',
+      'Veterinarian testimonial section with animations'
     ],
-    featured: true
+    featured: false
   },
   {
     id: '3',
     title: 'MOS Burger Shop Management System - Web Application',
     description: 'A full-featured web application designed to streamline the operations of MOS Burgers, a local food business, by replacing manual processes with a modern, efficient system for managing food items, orders, customers, and reporting.',
-    image: 'images/ward-management-system.jpg',
+    image: 'images/mos-burger-system.jpg',
     category: 'Web Applications',
     links: [
       {
