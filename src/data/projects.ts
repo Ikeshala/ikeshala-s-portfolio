@@ -573,6 +573,46 @@ export const allProjects: Project[] = [
       'User-friendly sign-in and verification flows'
     ],
     featured: false
+  },
+  {
+    id: '17',
+    title: 'Cargo Jet - Shipping Company Website',
+    description: 'Cargo Jet’s landing page is designed to provide a professional, user-friendly, and visually appealing interface that highlights the company’s shipping services and logistics solutions. The design focuses on clarity, efficiency, and a modern aesthetic, reflecting the company’s commitment to reliable and innovative shipping services.',
+    image: 'images/cargo-jet.jpg',
+    category: 'Web Solutions',
+    links: [
+      {
+        type: 'figma-design',
+        url: 'https://www.figma.com/design/cHwQwylTZundAYQsXe2dAf/Cargo-jet-Web?m=auto&t=mjbZPMiwmnoh8QVZ-6',
+        label: 'View Design',
+        icon: 'fab fa-figma'
+      },
+      {
+        type: 'figma-prototype',
+        url: 'https://www.figma.com/proto/cHwQwylTZundAYQsXe2dAf/Cargo-jet-Web?node-id=1-2&t=U35TUORPiz3nJWfn-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1',
+        label: 'View Prototype',
+        icon: 'fas fa-play-circle'
+      }
+    ],
+    tags: ['UI Design', 'Shipping', 'Landing Page', 'Figma'],
+    challenge: 'Create a clear, efficient, and visually appealing landing page that communicates Cargo Jet\'s logistics solutions while maintaining a professional tone.',
+    solution: 'Designed a modern landing page using consistent spacing, clear visual hierarchy, and a cohesive color palette. Incorporated vector patterns and subtle shadows to enhance aesthetics without overwhelming the user. The design is fully responsive and includes sections tailored to user needs like shipment tracking and testimonials.',
+    results: 'Delivered a sleek, professional landing page design that enhances user engagement and trust. The responsive design ensures accessibility across devices, and clear CTAs guide users to key actions such as getting quotes and tracking shipments.',
+    overview: 'The project features a navigation bar with key sections, an engaging hero section, detailed about and services sections, shipment status tracking, testimonials, partner logos, news updates, and a comprehensive footer. The design system focuses on balanced spacing, modern typography, and brand colors to maintain consistency and appeal.',
+    tools: ['Figma', 'UI/UX Design', 'Design System', 'Responsive Design', 'Typography'],
+    keyFeatures: [
+      'Navigation Bar with primary links and unique logo',
+      'Hero Section with impactful headline and CTA buttons',
+      'About Us and Logistic Solutions with vector designs',
+      'Shipment Status tracking form',
+      'Testimonial section with customer photos and quotes',
+      'Partner logos showcasing trusted teams',
+      'Latest News section for updates',
+      'Footer with essential links and newsletter subscription',
+      'Design system emphasizing spacing, shadows, and typography',
+      'Responsive design for mobile and desktop'
+    ],
+    featured: false
   }
 ]
 
