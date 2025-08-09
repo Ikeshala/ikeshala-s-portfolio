@@ -14,6 +14,8 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - 🌐 **SEO Optimized**: Meta tags and structured data for better search visibility
 - 📱 **Mobile Navigation**: Modern hamburger menu with smooth animations
 - 🎠 **Carousel Components**: Interactive filter carousel for project categories
+- 📊 **Analytics Integration**: Google Analytics tracking for visitor insights and performance monitoring
+- 🎯 **Portfolio Metrics**: Professional statistics showcase with updated achievements and collaborations
 
 ## 🛠️ Tech Stack
 
@@ -28,6 +30,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - **GitHub Pages** - Static site hosting and deployment
 - **Formspree** - Professional email form handling and delivery
 - **Email Integration** - Direct mailto links and form-based contact
+- **Google Analytics** - Visitor tracking and website performance analytics
 
 ### Development Tools
 - **ESLint** - Code linting and quality assurance
@@ -111,6 +114,7 @@ Update your personal information in the following components:
 - **Contact Information**: Update in `src/components/ContactForm.tsx` and `src/components/Footer.tsx`
 - **Email Address**: Update in multiple components for contact functionality
 - **Formspree Integration**: Configured for reliable email delivery to `ikeshala.peiris@gmail.com`
+- **Portfolio Statistics**: Update the 'At a Glance' section in `src/pages/About.tsx` with your latest achievements
 
 ### Projects
 
@@ -206,6 +210,15 @@ The project is configured for GitHub Pages deployment with proper routing:
    - Set source to `gh-pages` branch
    - Your site will be available at: `https://yourusername.github.io/ikeshala-s-portfolio/`
 
+### Analytics Setup
+
+The portfolio includes Google Analytics tracking for visitor insights:
+
+1. **Tracking ID**: `G-Z2SLM8W018` (already configured)
+2. **Automatic Data Collection**: Starts immediately after deployment
+3. **Privacy Compliant**: Standard Google Analytics implementation
+4. **Real-time Monitoring**: Track visitors, traffic sources, and engagement metrics
+
 ### Important Configuration Notes
 
 - **Base Path**: Configured for GitHub Pages subdirectory hosting
@@ -247,6 +260,7 @@ The project is configured for GitHub Pages deployment with proper routing:
 - **Mobile-Friendly**: Responsive design for all devices
 - **Accessibility**: WCAG compliant design patterns
 - **Open Graph**: Social media sharing optimization
+- **Analytics Integration**: Google Analytics for performance monitoring and visitor insights
 
 ## 🤝 Contributing
 
@@ -284,6 +298,21 @@ For any usage requests, please contact: **ikeshala.peiris@gmail.com**
 ## 🌐 Live Demo
 
 Visit the live portfolio: **[https://ikeshala.github.io/ikeshala-s-portfolio/](https://ikeshala.github.io/ikeshala-s-portfolio/)**
+
+## 📈 Recent Updates
+
+### Latest Portfolio Statistics (Updated 2024)
+The 'At a Glance' section now showcases:
+- **25+ Digital Projects Designed** - Comprehensive portfolio of UI/UX work
+- **12+ Brand Collaborations** - Professional partnerships and client work
+- **8 Industries Served** - Diverse sector experience and expertise
+- **4.8★ Client & Team Feedback** - Excellent satisfaction ratings
+
+### Analytics Integration
+- **Google Analytics** tracking enabled for visitor insights
+- **Real-time monitoring** of website performance and user engagement
+- **Traffic source analysis** to understand visitor acquisition
+- **Performance metrics** for continuous improvement
 
 ---
 
