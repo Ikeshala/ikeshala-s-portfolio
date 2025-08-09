@@ -79,29 +79,7 @@ src/
 - **Contact Information**: Update in `src/components/ContactForm.tsx` and `src/components/Footer.tsx`
 - **Portfolio Statistics**: Update the 'At a Glance' section in `src/pages/About.tsx`
 
-### Projects
-Manage your projects in `src/data/projects.ts`:
 
-```typescript
-export interface Project {
-  id: string
-  title: string
-  description: string
-  image: string
-  category: string
-  figmaLink: string
-  liveSiteUrl?: string
-  tags: string[]
-  challenge: string
-  solution: string
-  results: string
-  overview: string
-  tools: string[]
-  keyFeatures: string[]
-  featured?: boolean
-  date?: string
-}
-```
 
 ## 🌐 Deployment
 
@@ -133,21 +111,12 @@ The portfolio includes Google Analytics tracking for visitor insights:
 
 ## 📈 Recent Updates
 
-### Latest Portfolio Statistics (Updated 2024)
-The 'At a Glance' section now showcases:
-- **25+ Digital Projects Designed** - Comprehensive portfolio of UI/UX work
-- **12+ Brand Collaborations** - Professional partnerships and client work
-- **8 Industries Served** - Diverse sector experience and expertise
-- **4.8★ Client & Team Feedback** - Excellent satisfaction ratings
-
-### Analytics Integration
-- **Google Analytics** tracking enabled for visitor insights
-- **Real-time monitoring** of website performance and user engagement
-- **Traffic source analysis** to understand visitor acquisition
+- **Portfolio Statistics Updated**: New 'At a Glance' section with latest achievements
+- **Google Analytics Integration**: Visitor tracking and performance monitoring enabled
 
 ## 📝 License & Copyright
 
-**Copyright © 2024 Ikeshala Peiris. All rights reserved.**
+**Copyright © Ikeshala Peiris. All rights reserved.**
 
 This portfolio website and its contents are the exclusive property of Ikeshala Peiris. Unauthorized copying, distribution, modification, public display, or public performance of this work is strictly prohibited.
 
