@@ -133,20 +133,20 @@ const About = () => {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
               <div className="text-center p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors duration-300">
-                <div className="text-3xl font-bold gemini-gradient-text mb-2">40+</div>
-                <div className="text-sm text-white/70">UI/UX Projects Delivered</div>
+                <div className="text-3xl font-bold gemini-gradient-text mb-2">25+</div>
+                <div className="text-sm text-white/70">Digital Projects Designed</div>
               </div>
               <div className="text-center p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors duration-300">
-                <div className="text-3xl font-bold gemini-gradient-text mb-2">3+</div>
-                <div className="text-sm text-white/70">Years in Digital Design</div>
+                <div className="text-3xl font-bold gemini-gradient-text mb-2">12+</div>
+                <div className="text-sm text-white/70">Brand Collaborations</div>
               </div>
               <div className="text-center p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors duration-300">
-                <div className="text-3xl font-bold gemini-gradient-text mb-2">15+</div>
-                <div className="text-sm text-white/70">Brands Collaborated With</div>
+                <div className="text-3xl font-bold gemini-gradient-text mb-2">8</div>
+                <div className="text-sm text-white/70">Industries Served</div>
               </div>
               <div className="text-center p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors duration-300">
-                <div className="text-3xl font-bold gemini-gradient-text mb-2">98%</div>
-                <div className="text-sm text-white/70">Positive Client Feedback</div>
+                <div className="text-3xl font-bold gemini-gradient-text mb-2">4.8★</div>
+                <div className="text-sm text-white/70">Client & Team Feedback</div>
               </div>
             </div>
           </div>
